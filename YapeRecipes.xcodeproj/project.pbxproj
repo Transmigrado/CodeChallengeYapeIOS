@@ -24,6 +24,9 @@
 		4F36A00D29C393C30050138C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F36A00C29C393C30050138C /* FirebaseFirestore */; };
 		4F36A00F29C393C30050138C /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4F36A00E29C393C30050138C /* FirebaseFirestoreCombine-Community */; };
 		4F36A01129C393C30050138C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F36A01029C393C30050138C /* FirebaseFirestoreSwift */; };
+		4F36A01429C3A1220050138C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01329C3A1220050138C /* ButtonView.swift */; };
+		4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01629C3A2830050138C /* Button+Styles.swift */; };
+		4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01829C3BC850050138C /* TextField+Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		4F369FEC29C38E830050138C /* YapeRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesUITests.swift; sourceTree = "<group>"; };
 		4F369FEE29C38E830050138C /* YapeRecipesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4F369FFD29C393100050138C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F36A01329C3A1220050138C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		4F36A01629C3A2830050138C /* Button+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Styles.swift"; sourceTree = "<group>"; };
+		4F36A01829C3BC850050138C /* TextField+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Styles.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,8 @@
 		4F369FFB29C390E60050138C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4F36A01529C3A26C0050138C /* Styles */,
+				4F36A01229C3A10D0050138C /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +170,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4F36A01229C3A10D0050138C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4F36A01329C3A1220050138C /* ButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4F36A01529C3A26C0050138C /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				4F36A01629C3A2830050138C /* Button+Styles.swift */,
+				4F36A01829C3BC850050138C /* TextField+Styles.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +335,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F369FD429C38E7E0050138C /* ContentView.swift in Sources */,
+				4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */,
 				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
+				4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */,
+				4F36A01429C3A1220050138C /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
