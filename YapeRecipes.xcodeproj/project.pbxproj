@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
+		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
+		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
+		4F369FD929C38E820050138C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD829C38E820050138C /* Preview Assets.xcassets */; };
+		4F369FE329C38E820050138C /* YapeRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FE229C38E820050138C /* YapeRecipesTests.swift */; };
+		4F369FED29C38E830050138C /* YapeRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FEC29C38E830050138C /* YapeRecipesUITests.swift */; };
+		4F369FEF29C38E830050138C /* YapeRecipesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FEE29C38E830050138C /* YapeRecipesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F369FDF29C38E820050138C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F369FC629C38E7E0050138C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F369FCD29C38E7E0050138C;
+			remoteInfo = YapeRecipes;
+		};
+		4F369FE929C38E830050138C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F369FC629C38E7E0050138C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F369FCD29C38E7E0050138C;
+			remoteInfo = YapeRecipes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F369FCE29C38E7E0050138C /* YapeRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesApp.swift; sourceTree = "<group>"; };
+		4F369FD329C38E7E0050138C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F369FD529C38E820050138C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F369FD829C38E820050138C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F369FDE29C38E820050138C /* YapeRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YapeRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F369FE229C38E820050138C /* YapeRecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesTests.swift; sourceTree = "<group>"; };
+		4F369FE829C38E830050138C /* YapeRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YapeRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F369FEC29C38E830050138C /* YapeRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesUITests.swift; sourceTree = "<group>"; };
+		4F369FEE29C38E830050138C /* YapeRecipesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F369FCB29C38E7E0050138C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F369FDB29C38E820050138C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F369FE529C38E830050138C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F369FC529C38E7E0050138C = {
+			isa = PBXGroup;
+			children = (
+				4F369FD029C38E7E0050138C /* YapeRecipes */,
+				4F369FE129C38E820050138C /* YapeRecipesTests */,
+				4F369FEB29C38E830050138C /* YapeRecipesUITests */,
+				4F369FCF29C38E7E0050138C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F369FCF29C38E7E0050138C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F369FCE29C38E7E0050138C /* YapeRecipes.app */,
+				4F369FDE29C38E820050138C /* YapeRecipesTests.xctest */,
+				4F369FE829C38E830050138C /* YapeRecipesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F369FD029C38E7E0050138C /* YapeRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */,
+				4F369FD329C38E7E0050138C /* ContentView.swift */,
+				4F369FD529C38E820050138C /* Assets.xcassets */,
+				4F369FD729C38E820050138C /* Preview Content */,
+			);
+			path = YapeRecipes;
+			sourceTree = "<group>";
+		};
+		4F369FD729C38E820050138C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F369FD829C38E820050138C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F369FE129C38E820050138C /* YapeRecipesTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F369FE229C38E820050138C /* YapeRecipesTests.swift */,
+			);
+			path = YapeRecipesTests;
+			sourceTree = "<group>";
+		};
+		4F369FEB29C38E830050138C /* YapeRecipesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F369FEC29C38E830050138C /* YapeRecipesUITests.swift */,
+				4F369FEE29C38E830050138C /* YapeRecipesUITestsLaunchTests.swift */,
+			);
+			path = YapeRecipesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F369FCD29C38E7E0050138C /* YapeRecipes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F369FF229C38E830050138C /* Build configuration list for PBXNativeTarget "YapeRecipes" */;
+			buildPhases = (
+				4F369FCA29C38E7E0050138C /* Sources */,
+				4F369FCB29C38E7E0050138C /* Frameworks */,
+				4F369FCC29C38E7E0050138C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YapeRecipes;
+			productName = YapeRecipes;
+			productReference = 4F369FCE29C38E7E0050138C /* YapeRecipes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F369FDD29C38E820050138C /* YapeRecipesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F369FF529C38E830050138C /* Build configuration list for PBXNativeTarget "YapeRecipesTests" */;
+			buildPhases = (
+				4F369FDA29C38E820050138C /* Sources */,
+				4F369FDB29C38E820050138C /* Frameworks */,
+				4F369FDC29C38E820050138C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F369FE029C38E820050138C /* PBXTargetDependency */,
+			);
+			name = YapeRecipesTests;
+			productName = YapeRecipesTests;
+			productReference = 4F369FDE29C38E820050138C /* YapeRecipesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F369FE729C38E830050138C /* YapeRecipesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F369FF829C38E830050138C /* Build configuration list for PBXNativeTarget "YapeRecipesUITests" */;
+			buildPhases = (
+				4F369FE429C38E830050138C /* Sources */,
+				4F369FE529C38E830050138C /* Frameworks */,
+				4F369FE629C38E830050138C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F369FEA29C38E830050138C /* PBXTargetDependency */,
+			);
+			name = YapeRecipesUITests;
+			productName = YapeRecipesUITests;
+			productReference = 4F369FE829C38E830050138C /* YapeRecipesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F369FC629C38E7E0050138C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4F369FCD29C38E7E0050138C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					4F369FDD29C38E820050138C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4F369FCD29C38E7E0050138C;
+					};
+					4F369FE729C38E830050138C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4F369FCD29C38E7E0050138C;
+					};
+				};
+			};
+			buildConfigurationList = 4F369FC929C38E7E0050138C /* Build configuration list for PBXProject "YapeRecipes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F369FC529C38E7E0050138C;
+			productRefGroup = 4F369FCF29C38E7E0050138C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F369FCD29C38E7E0050138C /* YapeRecipes */,
+				4F369FDD29C38E820050138C /* YapeRecipesTests */,
+				4F369FE729C38E830050138C /* YapeRecipesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F369FCC29C38E7E0050138C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F369FD929C38E820050138C /* Preview Assets.xcassets in Resources */,
+				4F369FD629C38E820050138C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F369FDC29C38E820050138C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F369FE629C38E830050138C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F369FCA29C38E7E0050138C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F369FD429C38E7E0050138C /* ContentView.swift in Sources */,
+				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F369FDA29C38E820050138C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F369FE329C38E820050138C /* YapeRecipesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F369FE429C38E830050138C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F369FED29C38E830050138C /* YapeRecipesUITests.swift in Sources */,
+				4F369FEF29C38E830050138C /* YapeRecipesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F369FE029C38E820050138C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F369FCD29C38E7E0050138C /* YapeRecipes */;
+			targetProxy = 4F369FDF29C38E820050138C /* PBXContainerItemProxy */;
+		};
+		4F369FEA29C38E830050138C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F369FCD29C38E7E0050138C /* YapeRecipes */;
+			targetProxy = 4F369FE929C38E830050138C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F369FF029C38E830050138C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F369FF129C38E830050138C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F369FF329C38E830050138C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YapeRecipes/Preview Content\"";
+				DEVELOPMENT_TEAM = 2BF9HG77P9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueprint.YapeRecipes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F369FF429C38E830050138C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YapeRecipes/Preview Content\"";
+				DEVELOPMENT_TEAM = 2BF9HG77P9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueprint.YapeRecipes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F369FF629C38E830050138C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BF9HG77P9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueprint.YapeRecipesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YapeRecipes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YapeRecipes";
+			};
+			name = Debug;
+		};
+		4F369FF729C38E830050138C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BF9HG77P9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueprint.YapeRecipesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YapeRecipes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YapeRecipes";
+			};
+			name = Release;
+		};
+		4F369FF929C38E830050138C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BF9HG77P9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueprint.YapeRecipesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YapeRecipes;
+			};
+			name = Debug;
+		};
+		4F369FFA29C38E830050138C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BF9HG77P9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueprint.YapeRecipesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YapeRecipes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F369FC929C38E7E0050138C /* Build configuration list for PBXProject "YapeRecipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F369FF029C38E830050138C /* Debug */,
+				4F369FF129C38E830050138C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F369FF229C38E830050138C /* Build configuration list for PBXNativeTarget "YapeRecipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F369FF329C38E830050138C /* Debug */,
+				4F369FF429C38E830050138C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F369FF529C38E830050138C /* Build configuration list for PBXNativeTarget "YapeRecipesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F369FF629C38E830050138C /* Debug */,
+				4F369FF729C38E830050138C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F369FF829C38E830050138C /* Build configuration list for PBXNativeTarget "YapeRecipesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F369FF929C38E830050138C /* Debug */,
+				4F369FFA29C38E830050138C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F369FC629C38E7E0050138C /* Project object */;
+}
