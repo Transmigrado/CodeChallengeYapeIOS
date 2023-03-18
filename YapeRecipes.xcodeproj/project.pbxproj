@@ -21,6 +21,8 @@
 		4F0078D429C657CA0054046E /* RecipesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078D329C657CA0054046E /* RecipesManager.swift */; };
 		4F0078D629C659830054046E /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078D529C659830054046E /* Recipe.swift */; };
 		4F0078D829C6612E0054046E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078D729C6612E0054046E /* User.swift */; };
+		4F0078DB29C664680054046E /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0078DA29C664680054046E /* ReSwift */; };
+		4F0078DF29C664BA0054046E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078DE29C664BA0054046E /* AppState.swift */; };
 		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
 		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
 		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
@@ -73,6 +75,7 @@
 		4F0078D329C657CA0054046E /* RecipesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesManager.swift; sourceTree = "<group>"; };
 		4F0078D529C659830054046E /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		4F0078D729C6612E0054046E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4F0078DE29C664BA0054046E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4F369FCE29C38E7E0050138C /* YapeRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesApp.swift; sourceTree = "<group>"; };
 		4F369FD329C38E7E0050138C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +100,7 @@
 				4F36A00529C393C30050138C /* FirebaseAnalyticsSwift in Frameworks */,
 				4F36A00F29C393C30050138C /* FirebaseFirestoreCombine-Community in Frameworks */,
 				4F36A00B29C393C30050138C /* FirebaseAuthCombine-Community in Frameworks */,
+				4F0078DB29C664680054046E /* ReSwift in Frameworks */,
 				4F36A00929C393C30050138C /* FirebaseAuth in Frameworks */,
 				4F36A00129C393C30050138C /* FirebaseAnalytics in Frameworks */,
 				4F36A00329C393C30050138C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
@@ -163,6 +167,22 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		4F0078DC29C664950054046E /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				4F0078DD29C664A40054046E /* Core */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		4F0078DD29C664A40054046E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4F0078DE29C664BA0054046E /* AppState.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		4F369FC529C38E7E0050138C = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +206,7 @@
 		4F369FD029C38E7E0050138C /* YapeRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				4F0078DC29C664950054046E /* Redux */,
 				4F0078D229C657B60054046E /* UseCases */,
 				4F0078B729C5EE490054046E /* Coordinator */,
 				4F369FFC29C390FA0050138C /* Model */,
@@ -289,6 +310,7 @@
 				4F36A01029C393C30050138C /* FirebaseFirestoreSwift */,
 				4F0078B529C5EE390054046E /* Coordinator */,
 				4F0078C229C629DE0054046E /* MapboxMaps */,
+				4F0078DA29C664680054046E /* ReSwift */,
 			);
 			productName = YapeRecipes;
 			productReference = 4F369FCE29C38E7E0050138C /* YapeRecipes.app */;
@@ -366,6 +388,7 @@
 				4F369FFF29C393C30050138C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				4F0078B429C5EE390054046E /* XCRemoteSwiftPackageReference "Coordinator" */,
 				4F0078C129C629DE0054046E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				4F0078D929C664680054046E /* XCRemoteSwiftPackageReference "ReSwift" */,
 			);
 			productRefGroup = 4F369FCF29C38E7E0050138C /* Products */;
 			projectDirPath = "";
@@ -413,6 +436,7 @@
 				4F369FD429C38E7E0050138C /* ContentView.swift in Sources */,
 				4F0078CE29C63DF90054046E /* HomeView.swift in Sources */,
 				4F0078CC29C63DE80054046E /* ProfileView.swift in Sources */,
+				4F0078DF29C664BA0054046E /* AppState.swift in Sources */,
 				4F0078C529C629F50054046E /* MapRecipesView.swift in Sources */,
 				4F0078C829C62B5E0054046E /* MapBoxMapView.swift in Sources */,
 				4F0078B329C551CE0054046E /* MainView.swift in Sources */,
@@ -769,6 +793,14 @@
 				kind = branch;
 			};
 		};
+		4F0078D929C664680054046E /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		4F369FFF29C393C30050138C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -789,6 +821,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F0078C129C629DE0054046E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
 			productName = MapboxMaps;
+		};
+		4F0078DA29C664680054046E /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F0078D929C664680054046E /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
 		};
 		4F36A00029C393C30050138C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
