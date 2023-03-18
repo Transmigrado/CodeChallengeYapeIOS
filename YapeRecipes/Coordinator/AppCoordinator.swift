@@ -13,7 +13,7 @@ class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
     override func transition(for route: AppDestination) -> ViewTransition {
         switch route {
             case .first:
-                return .present(Text("First"))
+                return .present(MapRecipesView())
             case .second:
                 return .push(Text("Second"))
             case .third:

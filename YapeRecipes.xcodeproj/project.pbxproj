@@ -12,6 +12,10 @@
 		4F0078B929C5EE650054046E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078B829C5EE650054046E /* AppCoordinator.swift */; };
 		4F0078BB29C5EE9B0054046E /* AppDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078BA29C5EE9B0054046E /* AppDestination.swift */; };
 		4F0078BD29C5F0510054046E /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078BC29C5F0510054046E /* SigninView.swift */; };
+		4F0078C329C629DE0054046E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0078C229C629DE0054046E /* MapboxMaps */; };
+		4F0078C529C629F50054046E /* MapRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078C429C629F50054046E /* MapRecipesView.swift */; };
+		4F0078C829C62B5E0054046E /* MapBoxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078C729C62B5E0054046E /* MapBoxMapView.swift */; };
+		4F0078CA29C62B7A0054046E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078C929C62B7A0054046E /* MapViewController.swift */; };
 		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
 		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
 		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
@@ -56,6 +60,9 @@
 		4F0078B829C5EE650054046E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4F0078BA29C5EE9B0054046E /* AppDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDestination.swift; sourceTree = "<group>"; };
 		4F0078BC29C5F0510054046E /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		4F0078C429C629F50054046E /* MapRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRecipesView.swift; sourceTree = "<group>"; };
+		4F0078C729C62B5E0054046E /* MapBoxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxMapView.swift; sourceTree = "<group>"; };
+		4F0078C929C62B7A0054046E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4F369FCE29C38E7E0050138C /* YapeRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesApp.swift; sourceTree = "<group>"; };
 		4F369FD329C38E7E0050138C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 				4F36A00729C393C30050138C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				4F36A00D29C393C30050138C /* FirebaseFirestore in Frameworks */,
 				4F36A01129C393C30050138C /* FirebaseFirestoreSwift in Frameworks */,
+				4F0078C329C629DE0054046E /* MapboxMaps in Frameworks */,
 				4F0078B629C5EE390054046E /* Coordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +120,7 @@
 			children = (
 				4F0078B229C551CE0054046E /* MainView.swift */,
 				4F0078BC29C5F0510054046E /* SigninView.swift */,
+				4F0078C429C629F50054046E /* MapRecipesView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -123,6 +132,15 @@
 				4F0078BA29C5EE9B0054046E /* AppDestination.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4F0078C629C62B4D0054046E /* map */ = {
+			isa = PBXGroup;
+			children = (
+				4F0078C729C62B5E0054046E /* MapBoxMapView.swift */,
+				4F0078C929C62B7A0054046E /* MapViewController.swift */,
+			);
+			path = map;
 			sourceTree = "<group>";
 		};
 		4F369FC529C38E7E0050138C = {
@@ -205,6 +223,7 @@
 		4F36A01229C3A10D0050138C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4F0078C629C62B4D0054046E /* map */,
 				4F36A01329C3A1220050138C /* ButtonView.swift */,
 			);
 			path = Components;
@@ -246,6 +265,7 @@
 				4F36A00E29C393C30050138C /* FirebaseFirestoreCombine-Community */,
 				4F36A01029C393C30050138C /* FirebaseFirestoreSwift */,
 				4F0078B529C5EE390054046E /* Coordinator */,
+				4F0078C229C629DE0054046E /* MapboxMaps */,
 			);
 			productName = YapeRecipes;
 			productReference = 4F369FCE29C38E7E0050138C /* YapeRecipes.app */;
@@ -322,6 +342,7 @@
 			packageReferences = (
 				4F369FFF29C393C30050138C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				4F0078B429C5EE390054046E /* XCRemoteSwiftPackageReference "Coordinator" */,
+				4F0078C129C629DE0054046E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
 			);
 			productRefGroup = 4F369FCF29C38E7E0050138C /* Products */;
 			projectDirPath = "";
@@ -367,10 +388,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F369FD429C38E7E0050138C /* ContentView.swift in Sources */,
+				4F0078C529C629F50054046E /* MapRecipesView.swift in Sources */,
+				4F0078C829C62B5E0054046E /* MapBoxMapView.swift in Sources */,
 				4F0078B329C551CE0054046E /* MainView.swift in Sources */,
 				4F0078BD29C5F0510054046E /* SigninView.swift in Sources */,
 				4F0078BB29C5EE9B0054046E /* AppDestination.swift in Sources */,
 				4F0078B929C5EE650054046E /* AppCoordinator.swift in Sources */,
+				4F0078CA29C62B7A0054046E /* MapViewController.swift in Sources */,
 				4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */,
 				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
 				4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */,
@@ -709,6 +733,14 @@
 				kind = branch;
 			};
 		};
+		4F0078C129C629DE0054046E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		4F369FFF29C393C30050138C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -724,6 +756,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F0078B429C5EE390054046E /* XCRemoteSwiftPackageReference "Coordinator" */;
 			productName = Coordinator;
+		};
+		4F0078C229C629DE0054046E /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F0078C129C629DE0054046E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
 		};
 		4F36A00029C393C30050138C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
