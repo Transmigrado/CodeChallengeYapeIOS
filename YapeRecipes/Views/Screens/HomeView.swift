@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @StateObject var recipesManager = RecipesManager()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(recipesManager.recipes){_ in
+                Text("hola")
+            }
+            .navigationTitle("Home")
+        }
+        .onAppear{
+            recipesManager.fetch()
+        }
     }
 }
 

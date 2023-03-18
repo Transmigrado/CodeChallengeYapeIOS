@@ -18,6 +18,8 @@
 		4F0078CA29C62B7A0054046E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078C929C62B7A0054046E /* MapViewController.swift */; };
 		4F0078CC29C63DE80054046E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078CB29C63DE80054046E /* ProfileView.swift */; };
 		4F0078CE29C63DF90054046E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078CD29C63DF90054046E /* HomeView.swift */; };
+		4F0078D429C657CA0054046E /* RecipesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078D329C657CA0054046E /* RecipesManager.swift */; };
+		4F0078D629C659830054046E /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078D529C659830054046E /* Recipe.swift */; };
 		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
 		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
 		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		4F0078C929C62B7A0054046E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4F0078CB29C63DE80054046E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4F0078CD29C63DF90054046E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4F0078D329C657CA0054046E /* RecipesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesManager.swift; sourceTree = "<group>"; };
+		4F0078D529C659830054046E /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		4F369FCE29C38E7E0050138C /* YapeRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesApp.swift; sourceTree = "<group>"; };
 		4F369FD329C38E7E0050138C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +153,14 @@
 			path = map;
 			sourceTree = "<group>";
 		};
+		4F0078D229C657B60054046E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4F0078D329C657CA0054046E /* RecipesManager.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		4F369FC529C38E7E0050138C = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +184,7 @@
 		4F369FD029C38E7E0050138C /* YapeRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				4F0078D229C657B60054046E /* UseCases */,
 				4F0078B729C5EE490054046E /* Coordinator */,
 				4F369FFC29C390FA0050138C /* Model */,
 				4F369FFB29C390E60050138C /* Views */,
@@ -222,6 +235,7 @@
 		4F369FFC29C390FA0050138C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F0078D529C659830054046E /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,10 +417,12 @@
 				4F0078BB29C5EE9B0054046E /* AppDestination.swift in Sources */,
 				4F0078B929C5EE650054046E /* AppCoordinator.swift in Sources */,
 				4F0078CA29C62B7A0054046E /* MapViewController.swift in Sources */,
+				4F0078D429C657CA0054046E /* RecipesManager.swift in Sources */,
 				4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */,
 				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
 				4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */,
 				4F36A01429C3A1220050138C /* ButtonView.swift in Sources */,
+				4F0078D629C659830054046E /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

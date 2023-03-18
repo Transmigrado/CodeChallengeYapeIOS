@@ -9,7 +9,9 @@ import SwiftUI
 
 struct MapRecipesView: View {
     var body: some View {
-        MapBoxMapView()
+        ZStack{
+            MapBoxMapView()    
+        }
     }
 }
 
