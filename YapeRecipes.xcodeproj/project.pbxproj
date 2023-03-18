@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F0078B329C551CE0054046E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078B229C551CE0054046E /* MainView.swift */; };
+		4F0078B629C5EE390054046E /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0078B529C5EE390054046E /* Coordinator */; };
 		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
 		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
 		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 				4F36A00729C393C30050138C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				4F36A00D29C393C30050138C /* FirebaseFirestore in Frameworks */,
 				4F36A01129C393C30050138C /* FirebaseFirestoreSwift in Frameworks */,
+				4F0078B629C5EE390054046E /* Coordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +228,7 @@
 				4F36A00C29C393C30050138C /* FirebaseFirestore */,
 				4F36A00E29C393C30050138C /* FirebaseFirestoreCombine-Community */,
 				4F36A01029C393C30050138C /* FirebaseFirestoreSwift */,
+				4F0078B529C5EE390054046E /* Coordinator */,
 			);
 			productName = YapeRecipes;
 			productReference = 4F369FCE29C38E7E0050138C /* YapeRecipes.app */;
@@ -301,6 +304,7 @@
 			mainGroup = 4F369FC529C38E7E0050138C;
 			packageReferences = (
 				4F369FFF29C393C30050138C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4F0078B429C5EE390054046E /* XCRemoteSwiftPackageReference "Coordinator" */,
 			);
 			productRefGroup = 4F369FCF29C38E7E0050138C /* Products */;
 			projectDirPath = "";
@@ -677,6 +681,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4F0078B429C5EE390054046E /* XCRemoteSwiftPackageReference "Coordinator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/Coordinator";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		4F369FFF29C393C30050138C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -688,6 +700,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4F0078B529C5EE390054046E /* Coordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F0078B429C5EE390054046E /* XCRemoteSwiftPackageReference "Coordinator" */;
+			productName = Coordinator;
+		};
 		4F36A00029C393C30050138C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4F369FFF29C393C30050138C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
