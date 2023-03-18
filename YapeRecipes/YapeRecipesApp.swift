@@ -7,10 +7,14 @@
 
 import SwiftUI
 import Firebase
+import Coordinator
 
 
 @main
 struct YapeRecipesApp: App {
+    
+    
+    @StateObject var coordinator = AppCoordinator()
     
     init() {
        FirebaseApp.configure()
@@ -19,6 +23,7 @@ struct YapeRecipesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .coordinator(coordinator)
         }
     }
 }

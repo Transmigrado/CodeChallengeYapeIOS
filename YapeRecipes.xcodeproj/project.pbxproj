@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4F0078B329C551CE0054046E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078B229C551CE0054046E /* MainView.swift */; };
 		4F0078B629C5EE390054046E /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0078B529C5EE390054046E /* Coordinator */; };
+		4F0078B929C5EE650054046E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078B829C5EE650054046E /* AppCoordinator.swift */; };
+		4F0078BB29C5EE9B0054046E /* AppDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078BA29C5EE9B0054046E /* AppDestination.swift */; };
+		4F0078BD29C5F0510054046E /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078BC29C5F0510054046E /* SigninView.swift */; };
 		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
 		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
 		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		4F0078B229C551CE0054046E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4F0078B829C5EE650054046E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4F0078BA29C5EE9B0054046E /* AppDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDestination.swift; sourceTree = "<group>"; };
+		4F0078BC29C5F0510054046E /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		4F369FCE29C38E7E0050138C /* YapeRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesApp.swift; sourceTree = "<group>"; };
 		4F369FD329C38E7E0050138C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,8 +111,18 @@
 			isa = PBXGroup;
 			children = (
 				4F0078B229C551CE0054046E /* MainView.swift */,
+				4F0078BC29C5F0510054046E /* SigninView.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		4F0078B729C5EE490054046E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4F0078B829C5EE650054046E /* AppCoordinator.swift */,
+				4F0078BA29C5EE9B0054046E /* AppDestination.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		4F369FC529C38E7E0050138C = {
@@ -132,6 +148,7 @@
 		4F369FD029C38E7E0050138C /* YapeRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				4F0078B729C5EE490054046E /* Coordinator */,
 				4F369FFC29C390FA0050138C /* Model */,
 				4F369FFB29C390E60050138C /* Views */,
 				4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */,
@@ -351,6 +368,9 @@
 			files = (
 				4F369FD429C38E7E0050138C /* ContentView.swift in Sources */,
 				4F0078B329C551CE0054046E /* MainView.swift in Sources */,
+				4F0078BD29C5F0510054046E /* SigninView.swift in Sources */,
+				4F0078BB29C5EE9B0054046E /* AppDestination.swift in Sources */,
+				4F0078B929C5EE650054046E /* AppCoordinator.swift in Sources */,
 				4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */,
 				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
 				4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */,

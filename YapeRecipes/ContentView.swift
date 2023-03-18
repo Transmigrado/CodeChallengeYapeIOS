@@ -6,40 +6,26 @@
 //
 
 import SwiftUI
-import Firebase
+import Coordinator
 
 struct ContentView: View {
-    @State var email = ""
-    @State var password = ""
+    @Coordinator(for: AppDestination.self) var coordinator
 
     var body: some View {
         VStack {
-            TextField("Email", text: $email)
-                .textFieldStyle(RoundedTextField())
-            SecureField("Password", text: $password)
-                .textFieldStyle(RoundedTextField())
-            Button(action: {
-                   print("Edit tapped!")
-               }) {
-                   HStack {
-                      
-                       Text("Edit")
-                           .fontWeight(.semibold)
-                           .font(.title)
-                   }
-               }
-              
-        }
-        .padding(10.0)
+           Button("First") {
+               coordinator.trigger(.first)
+           }
+           
+           Button("Second") {
+               coordinator.trigger(.second)
+           }
+           
+           Button("Third") {
+               coordinator.trigger(.third)
+           }
+       }
     }
 
-    func login() {
-        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-            if error != nil {
-                print(error?.localizedDescription ?? "")
-            } else {
-                print("success")
-            }
-        }
-    }
+    
 }
