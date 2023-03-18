@@ -8,7 +8,6 @@
 import Foundation
 
 enum AppDestination {
-    case first
-    case second
-    case third
+    case signin
+    case main
 }

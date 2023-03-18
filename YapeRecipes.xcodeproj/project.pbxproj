@@ -20,6 +20,7 @@
 		4F0078CE29C63DF90054046E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078CD29C63DF90054046E /* HomeView.swift */; };
 		4F0078D429C657CA0054046E /* RecipesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078D329C657CA0054046E /* RecipesManager.swift */; };
 		4F0078D629C659830054046E /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078D529C659830054046E /* Recipe.swift */; };
+		4F0078D829C6612E0054046E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078D729C6612E0054046E /* User.swift */; };
 		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
 		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
 		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		4F0078CD29C63DF90054046E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4F0078D329C657CA0054046E /* RecipesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesManager.swift; sourceTree = "<group>"; };
 		4F0078D529C659830054046E /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		4F0078D729C6612E0054046E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4F369FCE29C38E7E0050138C /* YapeRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesApp.swift; sourceTree = "<group>"; };
 		4F369FD329C38E7E0050138C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				4F0078D529C659830054046E /* Recipe.swift */,
+				4F0078D729C6612E0054046E /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				4F0078C829C62B5E0054046E /* MapBoxMapView.swift in Sources */,
 				4F0078B329C551CE0054046E /* MainView.swift in Sources */,
 				4F0078BD29C5F0510054046E /* SigninView.swift in Sources */,
+				4F0078D829C6612E0054046E /* User.swift in Sources */,
 				4F0078BB29C5EE9B0054046E /* AppDestination.swift in Sources */,
 				4F0078B929C5EE650054046E /* AppCoordinator.swift in Sources */,
 				4F0078CA29C62B7A0054046E /* MapViewController.swift in Sources */,

@@ -13,16 +13,12 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-           Button("First") {
-               coordinator.trigger(.first)
+           Button("Main") {
+               coordinator.trigger(.main)
            }
            
-           Button("Second") {
-               coordinator.trigger(.second)
-           }
-           
-           Button("Third") {
-               coordinator.trigger(.third)
+           Button("Signin") {
+               coordinator.trigger(.signin)
            }
        }
     }
