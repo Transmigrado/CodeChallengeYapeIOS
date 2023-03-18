@@ -18,9 +18,19 @@ struct ContentView: View {
                 .textFieldStyle(RoundedTextField())
             SecureField("Password", text: $password)
                 .textFieldStyle(RoundedTextField())
-            ButtonView()
+            Button(action: {
+                   print("Edit tapped!")
+               }) {
+                   HStack {
+                      
+                       Text("Edit")
+                           .fontWeight(.semibold)
+                           .font(.title)
+                   }
+               }
+              
         }
-        .padding()
+        .padding(10.0)
     }
 
     func login() {

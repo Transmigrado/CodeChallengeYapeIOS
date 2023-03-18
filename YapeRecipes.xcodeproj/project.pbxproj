@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0078B329C551CE0054046E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078B229C551CE0054046E /* MainView.swift */; };
 		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
 		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
 		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F0078B229C551CE0054046E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4F369FCE29C38E7E0050138C /* YapeRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesApp.swift; sourceTree = "<group>"; };
 		4F369FD329C38E7E0050138C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F0078B129C551AC0054046E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4F0078B229C551CE0054046E /* MainView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		4F369FC529C38E7E0050138C = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +169,7 @@
 		4F369FFB29C390E60050138C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4F0078B129C551AC0054046E /* Screens */,
 				4F36A01529C3A26C0050138C /* Styles */,
 				4F36A01229C3A10D0050138C /* Components */,
 			);
@@ -335,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F369FD429C38E7E0050138C /* ContentView.swift in Sources */,
+				4F0078B329C551CE0054046E /* MainView.swift in Sources */,
 				4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */,
 				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
 				4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */,
