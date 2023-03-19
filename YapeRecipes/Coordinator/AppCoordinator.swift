@@ -18,6 +18,8 @@ class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
                 return .set(SigninView())
             case .recipeDetail:
                 return .push(RecipeDetailView())
+            case .addRecipe:
+                return .present(AddRecipeView())
         }
     }
 }

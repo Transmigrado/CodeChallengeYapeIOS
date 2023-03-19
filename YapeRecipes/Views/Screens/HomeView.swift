@@ -9,6 +9,7 @@ import SwiftUI
 import Coordinator
 import ReSwift
 import ReSwiftThunk
+import SwiftUI_FAB
 
 struct HomeView: View {
     
@@ -18,12 +19,18 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             
-            ScrollView{
-                ForEach(self.store.state.recipes.list){
-                    RecipeCardView(recipe: $0)
+            ZStack{
+                ScrollView{
+                    ForEach(self.store.state.recipes.list){
+                        RecipeCardView(recipe: $0)
+                    }
                 }
+                .floatingActionButton(color: Color.blue, image: Image(systemName: "plus").foregroundColor(.white)) {
+                    coordinator.trigger(.addRecipe)
+                }
+                .navigationTitle("Recetas")
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .navigationTitle("Home")
         }
         .onAppear{
             self.store.dispatch(fetchThunk())

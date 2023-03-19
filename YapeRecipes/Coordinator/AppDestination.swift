@@ -11,4 +11,5 @@ enum AppDestination {
     case signin
     case main
     case recipeDetail
+    case addRecipe
 }

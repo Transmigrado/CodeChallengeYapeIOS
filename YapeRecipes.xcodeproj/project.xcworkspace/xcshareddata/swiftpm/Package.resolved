@@ -244,6 +244,15 @@
       }
     },
     {
+      "identity" : "swiftui-fab",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/karamage/SwiftUI-FAB",
+      "state" : {
+        "revision" : "b11cb42d27ff29f7f98e8b774a857c63d37bfb6f",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "swiftuix",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SwiftUIX/SwiftUIX.git",

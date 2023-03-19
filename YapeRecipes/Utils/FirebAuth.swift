@@ -2,7 +2,7 @@
 //  FirebAuth.swift
 //  SignInUsingGoogle
 //
-//  Created by Swee Kwang Chua on 12/5/22.
+//  Created by Jorge Acosta Alvarado on 19-03-23.
 //
 
 import Foundation
@@ -15,28 +15,26 @@ struct FirebAuth {
     
     private init() {}
     
-    func signinWithGoogle(presenting: UIViewController,
-                          completion: @escaping (Error?) -> Void) {
+    func signinWithGoogle(presenting: UIViewController, completion: @escaping (Error?) -> Void) {
         
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-        
-        print(clientID)
-        
+                
         let config = GIDConfiguration(clientID: clientID)
     
         GIDSignIn.sharedInstance.configuration = config
         
         GIDSignIn.sharedInstance.signIn(withPresenting: presenting){ result, error in
-            
-            let credential = GoogleAuthProvider.credential(withIDToken: result?.user.idToken?.tokenString ?? "", accessToken: result?.user.accessToken.tokenString ?? "")
+            let idToken =  result?.user.idToken?.tokenString ?? ""
+            let accessToken = result?.user.accessToken.tokenString ?? ""
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
 
-              Auth.auth().signIn(with: credential) { result, error in
-                  guard error == nil else {
-                      completion(error)
-                      return
-                  }
-                
+            Auth.auth().signIn(with: credential) { result, error in
+              guard error == nil else {
+                  completion(error)
+                  return
               }
+
+            }
         }
     }
 }
