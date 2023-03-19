@@ -14,6 +14,14 @@ struct SigninView: View {
 
     var body: some View {
         VStack {
+            
+            ImageCardView()
+            
+            Text("Descubre el mejor sabor")
+                .font(.system(size: 28))
+                .bold()
+            Text("Explora y comparte recetas con toda la comunidad")
+                
             TextField(LocalizedStringKey("email"), text: $email)
                 .textFieldStyle(RoundedTextField())
             SecureField(LocalizedStringKey("password"), text: $password)
