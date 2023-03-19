@@ -17,6 +17,7 @@ struct Recipe: Identifiable {
     var duration : Int
     var userId: String
     var type: FoodType
+    var textDescription: String
     
     
     var location: Location
@@ -29,6 +30,7 @@ struct Recipe: Identifiable {
         duration = snapshotValue["duration"] as! Int
         cal = snapshotValue["cal"] as! Int
         userId = snapshotValue["userId"] as! String
+        textDescription = snapshotValue["description"] as! String
         let firGeoPoint = snapshotValue["location"] as! GeoPoint
         location = Location(latitude: firGeoPoint.latitude, longitude: firGeoPoint.longitude)
         

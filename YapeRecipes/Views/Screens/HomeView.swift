@@ -6,22 +6,23 @@
 //
 
 import SwiftUI
+import Coordinator
 import ReSwift
 import ReSwiftThunk
 
 struct HomeView: View {
     
+    @Coordinator(for: AppDestination.self) var coordinator
     @EnvironmentObject var store: AppStore
     
     var body: some View {
         NavigationView {
-            VStack{
+            
+            ScrollView{
                 ForEach(self.store.state.recipes.list){
                     RecipeCardView(recipe: $0)
                 }
             }
-
-           
             .navigationTitle("Home")
         }
         .onAppear{

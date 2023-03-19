@@ -33,6 +33,7 @@
 		4F0078FD29C6A1A50054046E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0078FC29C6A1A50054046E /* SDWebImageSwiftUI */; };
 		4F0078FF29C6A74F0054046E /* NumberPropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078FE29C6A74F0054046E /* NumberPropView.swift */; };
 		4F00790129C6AAB80054046E /* RecipeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00790029C6AAB80054046E /* RecipeType.swift */; };
+		4F00790329C6B3CC0054046E /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00790229C6B3CC0054046E /* RecipeDetailView.swift */; };
 		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
 		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
 		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
@@ -94,6 +95,7 @@
 		4F0078F929C6990F0054046E /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
 		4F0078FE29C6A74F0054046E /* NumberPropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPropView.swift; sourceTree = "<group>"; };
 		4F00790029C6AAB80054046E /* RecipeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeType.swift; sourceTree = "<group>"; };
+		4F00790229C6B3CC0054046E /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		4F369FCE29C38E7E0050138C /* YapeRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesApp.swift; sourceTree = "<group>"; };
 		4F369FD329C38E7E0050138C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				4F0078C429C629F50054046E /* MapRecipesView.swift */,
 				4F0078CB29C63DE80054046E /* ProfileView.swift */,
 				4F0078CD29C63DF90054046E /* HomeView.swift */,
+				4F00790229C6B3CC0054046E /* RecipeDetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F0078EC29C670ED0054046E /* RecipesReducer.swift in Sources */,
+				4F00790329C6B3CC0054046E /* RecipeDetailView.swift in Sources */,
 				4F0078EE29C671120054046E /* Action.swift in Sources */,
 				4F0078E129C665310054046E /* BindableStore.swift in Sources */,
 				4F369FD429C38E7E0050138C /* ContentView.swift in Sources */,

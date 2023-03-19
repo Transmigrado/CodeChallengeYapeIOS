@@ -10,4 +10,5 @@ import Foundation
 enum AppDestination {
     case signin
     case main
+    case recipeDetail
 }

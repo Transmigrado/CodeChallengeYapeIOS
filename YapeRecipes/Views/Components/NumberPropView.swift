@@ -13,6 +13,7 @@ struct NumberPropView: View {
     var propName: String
     var value: String
     
+    
     var body: some View {
         VStack{
             Image(icon)
@@ -25,8 +26,8 @@ struct NumberPropView: View {
                 Text(value)
                     .font(.system(size: 12))
             }
-           
         }
+        .frame(width: 52.0)
     }
 }
 

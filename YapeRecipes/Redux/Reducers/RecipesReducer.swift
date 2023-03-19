@@ -16,6 +16,8 @@ func recipesReducer(action: Action, state: AppState?) -> AppState {
     switch action {
         case let data as FetchList<Recipe>:
             state.recipes.list = data.list
+        case let item as SelectItem<Recipe>:
+            state.recipes.selected = item.item
         default: break
     }
   

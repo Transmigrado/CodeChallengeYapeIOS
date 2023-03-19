@@ -16,6 +16,8 @@ class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
                 return .present(MainView())
             case .signin:
                 return .push(Text("Second"))
+            case .recipeDetail:
+                return .push(RecipeDetailView())
         }
     }
 }

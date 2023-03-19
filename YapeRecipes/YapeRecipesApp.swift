@@ -34,6 +34,7 @@ struct YapeRecipesApp: App {
         WindowGroup {
             MainView()
                 .environmentObject(store!)
+                .coordinator(coordinator)
         }
     }
 }

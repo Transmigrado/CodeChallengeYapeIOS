@@ -12,3 +12,7 @@ import SwiftUI
 struct FetchList<T>: Action {
     var list: [T]
 }
+
+struct SelectItem<T>: Action {
+    var item: T
+}

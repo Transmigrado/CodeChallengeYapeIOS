@@ -17,7 +17,7 @@ enum FoodType: String, CaseIterable {
             case .dessert:
                 return  "icDessert"
             case .mainDish:
-                return  "icDessert"
+                return  "icMainDish"
             case .soup:
                 return  "icSoup"
         }
