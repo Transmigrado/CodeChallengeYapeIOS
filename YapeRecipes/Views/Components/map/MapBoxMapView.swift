@@ -13,6 +13,7 @@ struct MapBoxMapView: UIViewRepresentable {
  
 
        @Binding private var camera: Camera
+        private var tapRecipe: (_ recipe: Recipe) -> ()
       
        private var styleURI = StyleURI.streets
 
@@ -30,8 +31,13 @@ struct MapBoxMapView: UIViewRepresentable {
                                                    .enumerated()
                                                    .map { (offset: Array<Recipe>.Index, recipe: Recipe) in
                                                        var annotation = PointAnnotation(id: offset.description, coordinate: CLLocationCoordinate2D(latitude: recipe.location.latitude, longitude: recipe.location.longitude))
+                                                     
+                                                       annotation.userInfo = ["recipe": recipe]
                                                     
                                                        annotation.image = .init(image: UIImage(named: "icRecipePin")!, name: "recipePin")
+                                                       
+                                                       
+                                              
                                                        return annotation
                                                    }
            
@@ -42,20 +48,21 @@ struct MapBoxMapView: UIViewRepresentable {
    
        private let mapInitOptions: MapInitOptions
 
-       init( camera: Binding<Camera>) {
-           
-           let myResourceOptions = ResourceOptions(accessToken: ProcessInfo.processInfo.environment["MAPBOX_API_KEY"] ?? "")
-           let cameraOptions = CameraOptions(center: CLLocationCoordinate2D(latitude: -33.4575046, longitude: -70.6184518), zoom: 10.0)
+        init( camera: Binding<Camera>, tapRecipe: @escaping (_ recipe: Recipe) -> ()) {
+               
+               let myResourceOptions = ResourceOptions(accessToken: ProcessInfo.processInfo.environment["MAPBOX_API_KEY"] ?? "")
+               let cameraOptions = CameraOptions(center: CLLocationCoordinate2D(latitude: -33.4575046, longitude: -70.6184518), zoom: 10.0)
 
-           let myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, cameraOptions: cameraOptions,styleURI: StyleURI(rawValue: "mapbox://styles/mapbox/streets-v12"))
-           
-           self.mapInitOptions = myMapInitOptions
-           _camera = camera
-       }
+               let myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, cameraOptions: cameraOptions,styleURI: StyleURI(rawValue: "mapbox://styles/mapbox/streets-v12"))
+               
+               self.mapInitOptions = myMapInitOptions
+               _camera = camera
+                self.tapRecipe=tapRecipe
+        }
 
     
        func makeCoordinator() -> SwiftUIMapViewCoordinator {
-           SwiftUIMapViewCoordinator(camera: $camera)
+           SwiftUIMapViewCoordinator(camera: $camera, tapRecipe: self.tapRecipe)
        }
 
       
@@ -63,6 +70,8 @@ struct MapBoxMapView: UIViewRepresentable {
            let mapView = MapView(frame: .zero, mapInitOptions: mapInitOptions)
 
            context.coordinator.mapView = mapView
+           
+
 
            updateUIView(mapView, context: context)
 
@@ -84,10 +93,12 @@ struct MapBoxMapView: UIViewRepresentable {
 }
 
 
-final class SwiftUIMapViewCoordinator {
+final class SwiftUIMapViewCoordinator: AnnotationInteractionDelegate {
+   
+    
 
     @Binding private var camera: Camera
-
+    private var tapRecipe: (_ recipe: Recipe) -> ()
 
     private(set) var pointAnnotationManager: PointAnnotationManager!
 
@@ -106,13 +117,16 @@ final class SwiftUIMapViewCoordinator {
             }
 
             pointAnnotationManager = mapView.annotations.makePointAnnotationManager()
+            pointAnnotationManager.delegate = self;
         }
     }
 
     private var cancelable: Cancelable?
 
-    init(camera: Binding<Camera>) {
+    init(camera: Binding<Camera>, tapRecipe: @escaping (_ recipe: Recipe) -> () ) {
         _camera = camera
+        self.tapRecipe = tapRecipe;
+        
     }
 
     deinit {
@@ -125,5 +139,10 @@ final class SwiftUIMapViewCoordinator {
         ignoreNotifications = true
         block()
         ignoreNotifications = false
+    }
+    
+    func annotationManager(_ manager: MapboxMaps.AnnotationManager, didDetectTappedAnnotations annotations: [MapboxMaps.Annotation]) {
+        self.tapRecipe(annotations[0].userInfo!["recipe"] as! Recipe)
+
     }
 }

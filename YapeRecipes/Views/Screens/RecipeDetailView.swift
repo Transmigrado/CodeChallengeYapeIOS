@@ -6,13 +6,21 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct RecipeDetailView: View {
     
     @EnvironmentObject var store: AppStore
     
     var body: some View {
-        Text(self.store.state.recipes.selected?.name ?? "")
+        VStack{
+            AnimatedImage(url: URL(string: self.store.state.recipes.selected!.cover))
+                .resizable()
+                .frame(height: 200.0)
+ 
+            Text(self.store.state.recipes.selected?.name ?? "")
+        }
+        
     }
 }
 

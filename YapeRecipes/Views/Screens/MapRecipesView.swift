@@ -7,19 +7,28 @@
 
 import SwiftUI
 import MapboxMaps
+import Coordinator
 
 struct MapRecipesView: View {
     
+    @Coordinator(for: AppDestination.self) var coordinator
     @EnvironmentObject var store: AppStore
     @State private var camera = Camera(center: CLLocationCoordinate2D(latitude: -33.4575046, longitude: -70.6184518), zoom: 14)
     @State private var styleURI = StyleURI.streets
 
     
     var body: some View {
-        ZStack{
-            MapBoxMapView(camera: $camera)
-                           .styleURI(styleURI)
-                           .annotations(self.store.state.recipes.list)
+        NavigationView {
+            ZStack{
+                MapBoxMapView(camera: $camera) { recipe in
+                    print(recipe)
+                    self.store.dispatch(SelectItem<Recipe>(item: recipe))
+                    coordinator.trigger(.recipeDetail)
+                }
+                .styleURI(styleURI)
+                .annotations(self.store.state.recipes.list)
+                
+            }
         }
     }
 }
