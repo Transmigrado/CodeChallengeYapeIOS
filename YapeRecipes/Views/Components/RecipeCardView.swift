@@ -19,24 +19,24 @@ struct RecipeCardView: View {
     var body: some View {
         VStack{
             HStack{
-                AnimatedImage(url: URL(string: recipe.cover))
+                AnimatedImage(url: URL(string: recipe.cover!))
                     .resizable()
                     .frame(width: 120.0, height: 120.0)
                 VStack{
                     VStack(alignment: .leading){
-                        Text(recipe.name)
+                        Text(recipe.name!)
                             .font(.system(size: 14))
                             .bold()
-                        Text(recipe.textDescription)
+                        Text(recipe.textDescription!)
                             .font(.system(size: 12))
                     }
                     Spacer().frame(height: 10.0)
                     HStack{
-                        NumberPropView(icon: "icCal", propName: "Cal", value: "\(recipe.cal)")
+                        NumberPropView(icon: "icCal", propName: "Cal", value: "\(recipe.cal ?? 0)")
                         Spacer()
-                        NumberPropView(icon: "icTime", propName: "Tiempo", value: "\(recipe.duration)")
+                        NumberPropView(icon: "icTime", propName: "Tiempo", value: "\(recipe.duration ?? 0)")
                         Spacer()
-                        NumberPropView(icon: recipe.type.icon(), propName: "Tipo", value: recipe.type.label())
+                        NumberPropView(icon: recipe.type!.icon(), propName: "Tipo", value: recipe.type!.label())
                     }
                 }
                 

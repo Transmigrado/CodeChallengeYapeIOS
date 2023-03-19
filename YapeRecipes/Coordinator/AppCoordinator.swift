@@ -10,6 +10,8 @@ import SwiftUI
 import Coordinator
 
 class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
+    
+    
     override func transition(for route: AppDestination) -> ViewTransition {
         switch route {
             case .main:
@@ -19,7 +21,7 @@ class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
             case .recipeDetail:
                 return .push(RecipeDetailView())
             case .addRecipe:
-                return .present(AddRecipeView())
+                return .push(AddRecipeView())
         }
     }
 }

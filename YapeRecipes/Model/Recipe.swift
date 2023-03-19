@@ -11,17 +11,20 @@ import Firebase
 
 struct Recipe: Identifiable {
     var id = UUID()
-    var name: String
-    var cover: String
-    var cal: Int
-    var duration : Int
-    var userId: String
-    var type: FoodType
-    var textDescription: String
+    var name: String?
+    var cover: String?
+    var cal: Int?
+    var duration : Int?
+    var userId: String?
+    var type: FoodType?
+    var textDescription: String?
+    
+    var location: Location?
     
     
-    var location: Location
-    
+}
+
+extension Recipe {
     init(snapshot: QueryDocumentSnapshot) {
   
         let snapshotValue = snapshot.data()
@@ -38,6 +41,5 @@ struct Recipe: Identifiable {
         
         print(type)
     }
-    
 }
 

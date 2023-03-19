@@ -26,6 +26,7 @@ struct YapeRecipesApp: App {
         )
 
         store = AppStore(reducer: reducer, state: AppState(), middleware: [thunkMiddleware])
+      
         FirebaseApp.configure()
        
     }

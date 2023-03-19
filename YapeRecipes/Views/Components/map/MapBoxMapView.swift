@@ -30,7 +30,7 @@ struct MapBoxMapView: UIViewRepresentable {
            let annotations: [PointAnnotation] =   recipes
                                                    .enumerated()
                                                    .map { (offset: Array<Recipe>.Index, recipe: Recipe) in
-                                                       var annotation = PointAnnotation(id: offset.description, coordinate: CLLocationCoordinate2D(latitude: recipe.location.latitude, longitude: recipe.location.longitude))
+                                                       var annotation = PointAnnotation(id: offset.description, coordinate: CLLocationCoordinate2D(latitude: recipe.location?.latitude ?? 0.0, longitude: recipe.location?.longitude ?? 0.0))
                                                      
                                                        annotation.userInfo = ["recipe": recipe]
                                                     

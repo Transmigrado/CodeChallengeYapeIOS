@@ -14,7 +14,7 @@ struct RecipeDetailView: View {
     
     var body: some View {
         VStack{
-            AnimatedImage(url: URL(string: self.store.state.recipes.selected!.cover))
+            AnimatedImage(url: URL(string: self.store.state.recipes.selected!.cover!))
                 .resizable()
                 .frame(height: 200.0)
  
