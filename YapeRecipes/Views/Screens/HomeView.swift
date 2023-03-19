@@ -15,9 +15,13 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            List(self.store.state.recipes.list){_ in
-                Text("hola")
+            VStack{
+                ForEach(self.store.state.recipes.list){
+                    RecipeCardView(recipe: $0)
+                }
             }
+
+           
             .navigationTitle("Home")
         }
         .onAppear{
