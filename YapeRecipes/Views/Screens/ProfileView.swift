@@ -20,7 +20,7 @@ struct ProfileView: View {
             Button("Cerrar sesión") {
                showingAlert = true
            }
-           .alert("¿Estás seguro que quieres salir?", isPresented: $showingAlert) {
+           .alert(LocalizedStringKey("are_you_sure_logout"), isPresented: $showingAlert) {
                Button("Cancel", role: .destructive) { }
                Button("Salir", role: .cancel) {
                    coordinator.trigger(.signin)

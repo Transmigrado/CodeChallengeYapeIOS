@@ -1,0 +1,16 @@
+/* 
+  Spanish.strings
+  YapeRecipes
+
+  Created by Jorge Acosta Alvarado on 19-03-23.
+  
+*/
+
+//user
+"are_you_sure_logout" = "¿Estás seguro que quieres salir?";
+
+
+//form
+"email" = "Correo";
+"password" = "Contraseña";
+

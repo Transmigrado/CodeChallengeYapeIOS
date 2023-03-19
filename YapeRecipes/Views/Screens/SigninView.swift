@@ -14,9 +14,9 @@ struct SigninView: View {
 
     var body: some View {
         VStack {
-            TextField("Email", text: $email)
+            TextField(LocalizedStringKey("email"), text: $email)
                 .textFieldStyle(RoundedTextField())
-            SecureField("Password", text: $password)
+            SecureField(LocalizedStringKey("password"), text: $password)
                 .textFieldStyle(RoundedTextField())
             Button(action: {
                    print("Edit tapped!")
