@@ -11,7 +11,7 @@ import MapboxMaps
 struct MapRecipesView: View {
     
     @EnvironmentObject var store: AppStore
-    @State private var camera = Camera(center: CLLocationCoordinate2D(latitude: 40, longitude: -75), zoom: 14)
+    @State private var camera = Camera(center: CLLocationCoordinate2D(latitude: -33.4575046, longitude: -70.6184518), zoom: 14)
     @State private var styleURI = StyleURI.streets
 
     
