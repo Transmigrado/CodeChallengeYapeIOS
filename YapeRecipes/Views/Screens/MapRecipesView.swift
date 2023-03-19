@@ -6,11 +6,20 @@
 //
 
 import SwiftUI
+import MapboxMaps
 
 struct MapRecipesView: View {
+    
+    @EnvironmentObject var store: AppStore
+    @State private var camera = Camera(center: CLLocationCoordinate2D(latitude: 40, longitude: -75), zoom: 14)
+    @State private var styleURI = StyleURI.streets
+
+    
     var body: some View {
         ZStack{
-            MapBoxMapView()    
+            MapBoxMapView(camera: $camera)
+                           .styleURI(styleURI)
+                           .annotations(self.store.state.recipes.list)
         }
     }
 }

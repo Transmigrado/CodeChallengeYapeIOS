@@ -6,20 +6,22 @@
 //
 
 import SwiftUI
+import ReSwift
+import ReSwiftThunk
 
 struct HomeView: View {
     
-    @StateObject var recipesManager = RecipesManager()
+    @EnvironmentObject var store: AppStore
     
     var body: some View {
         NavigationView {
-            List(recipesManager.recipes){_ in
+            List(self.store.state.recipes.list){_ in
                 Text("hola")
             }
             .navigationTitle("Home")
         }
         .onAppear{
-            recipesManager.fetch()
+            self.store.dispatch(fetchThunk())
         }
     }
 }

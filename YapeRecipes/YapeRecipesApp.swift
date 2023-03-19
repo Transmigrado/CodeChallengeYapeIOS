@@ -8,19 +8,32 @@
 import SwiftUI
 import Firebase
 import Coordinator
+import ReSwift
+import ReSwiftThunk
 
 @main
 struct YapeRecipesApp: App {
     
     @StateObject var coordinator = AppCoordinator()
     
-    init() {
-       FirebaseApp.configure()
+    let thunkMiddleware: Middleware<AppState> = createThunkMiddleware()
+    let store: AppStore?
+   
+    init(){
+       
+        let reducer = combineReducers(
+            recipesReducer
+        )
+
+        store = AppStore(reducer: reducer, state: AppState(), middleware: [thunkMiddleware])
+        FirebaseApp.configure()
     }
     
+
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environmentObject(store!)
         }
     }
 }

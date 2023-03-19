@@ -172,6 +172,15 @@
       }
     },
     {
+      "identity" : "reswift-thunk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReSwift/ReSwift-Thunk",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ce456e17722b216a766397188d76e2b2d5d004f2"
+      }
+    },
+    {
       "identity" : "swallow",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/vmanot/Swallow.git",

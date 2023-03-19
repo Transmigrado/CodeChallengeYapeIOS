@@ -12,12 +12,10 @@ import Coordinator
 class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
     override func transition(for route: AppDestination) -> ViewTransition {
         switch route {
-            case .first:
+            case .main:
                 return .present(MainView())
-            case .second:
+            case .signin:
                 return .push(Text("Second"))
-            case .third:
-                return .set(Text("third"))
         }
     }
 }
