@@ -8,7 +8,11 @@
 import SwiftUI
 import Firebase
 
+
 struct SigninView: View {
+    
+    @EnvironmentObject var store: AppStore
+    
     @State var email = ""
     @State var password = ""
 
@@ -36,6 +40,13 @@ struct SigninView: View {
                            .font(.title)
                    }
                }
+            
+            Button {
+                self.store.dispatch(googleSigninThunk())
+            } label: {
+                Text("Contectar con google")
+            }
+
               
         }
         .padding(10.0)

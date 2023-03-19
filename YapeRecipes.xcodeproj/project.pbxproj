@@ -55,6 +55,7 @@
 		4F36A01429C3A1220050138C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01329C3A1220050138C /* ButtonView.swift */; };
 		4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01629C3A2830050138C /* Button+Styles.swift */; };
 		4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01829C3BC850050138C /* TextField+Styles.swift */; };
+		4F81000129C76E1500BB1383 /* FirebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81000029C76E1500BB1383 /* FirebAuth.swift */; };
 		4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFE829C74A7300BB1383 /* UserDetectView.swift */; };
 		4F81FFED29C74FA000BB1383 /* Spanish.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFEF29C74FA000BB1383 /* Spanish.strings */; };
 		4F81FFF229C74FD800BB1383 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFF429C74FD800BB1383 /* English.strings */; };
@@ -118,10 +119,12 @@
 		4F36A01329C3A1220050138C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4F36A01629C3A2830050138C /* Button+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Styles.swift"; sourceTree = "<group>"; };
 		4F36A01829C3BC850050138C /* TextField+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Styles.swift"; sourceTree = "<group>"; };
+		4F81000029C76E1500BB1383 /* FirebAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebAuth.swift; sourceTree = "<group>"; };
 		4F81FFE829C74A7300BB1383 /* UserDetectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetectView.swift; sourceTree = "<group>"; };
 		4F81FFEE29C74FA000BB1383 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Spanish.strings; sourceTree = "<group>"; };
 		4F81FFF329C74FD800BB1383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
 		4F81FFF529C75C0600BB1383 /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
+		4F81FFFC29C75FF300BB1383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +260,8 @@
 		4F369FD029C38E7E0050138C /* YapeRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				4F81FFFF29C76E0B00BB1383 /* Utils */,
+				4F81FFFC29C75FF300BB1383 /* Info.plist */,
 				4F81FFEC29C74DA200BB1383 /* Assets */,
 				4F0078F429C677D90054046E /* Thunk */,
 				4F0078DC29C664950054046E /* Redux */,
@@ -346,6 +351,14 @@
 				4F81FFF429C74FD800BB1383 /* English.strings */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		4F81FFFF29C76E0B00BB1383 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F81000029C76E1500BB1383 /* FirebAuth.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +526,7 @@
 				4F00790329C6B3CC0054046E /* RecipeDetailView.swift in Sources */,
 				4F0078EE29C671120054046E /* Action.swift in Sources */,
 				4F0078E129C665310054046E /* BindableStore.swift in Sources */,
+				4F81000129C76E1500BB1383 /* FirebAuth.swift in Sources */,
 				4F0078CE29C63DF90054046E /* HomeView.swift in Sources */,
 				4F0078CC29C63DE80054046E /* ProfileView.swift in Sources */,
 				4F0078DF29C664BA0054046E /* AppState.swift in Sources */,
@@ -719,6 +733,7 @@
 				DEVELOPMENT_TEAM = 2BF9HG77P9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YapeRecipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -748,6 +763,7 @@
 				DEVELOPMENT_TEAM = 2BF9HG77P9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YapeRecipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
