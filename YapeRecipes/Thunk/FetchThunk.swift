@@ -6,11 +6,9 @@
 //
 
 
-
 import Foundation
 import ReSwift
 import ReSwiftThunk
-import CoreData
 import Firebase
 
 func fetchThunk() -> Thunk<AppState>{

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 import ReSwift
 
 func recipesReducer(action: Action, state: AppState?) -> AppState {

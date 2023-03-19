@@ -27,14 +27,17 @@ struct YapeRecipesApp: App {
 
         store = AppStore(reducer: reducer, state: AppState(), middleware: [thunkMiddleware])
         FirebaseApp.configure()
+       
     }
     
 
     var body: some Scene {
         WindowGroup {
-            MainView()
+            UserDetectView()
                 .environmentObject(store!)
                 .coordinator(coordinator)
         }
+     
+        
     }
 }

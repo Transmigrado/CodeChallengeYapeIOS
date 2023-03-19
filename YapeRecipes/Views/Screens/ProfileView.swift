@@ -6,10 +6,31 @@
 //
 
 import SwiftUI
+import Coordinator
 
 struct ProfileView: View {
+    
+    @EnvironmentObject var store: AppStore
+    @Coordinator(for: AppDestination.self) var coordinator
+    @State private var showingAlert = false
+    
     var body: some View {
-        Text("Profile")
+        VStack{
+            Text("Profile")
+            Button("Cerrar sesión") {
+               showingAlert = true
+           }
+           .alert("¿Estás seguro que quieres salir?", isPresented: $showingAlert) {
+               Button("Cancel", role: .destructive) { }
+               Button("Salir", role: .cancel) {
+                   coordinator.trigger(.signin)
+                   self.store.dispatch(logoutThunk())
+               }
+           }
+        }
+        
+     
+       
     }
 }
 

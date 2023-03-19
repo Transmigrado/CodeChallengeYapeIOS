@@ -34,8 +34,9 @@
 		4F0078FF29C6A74F0054046E /* NumberPropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0078FE29C6A74F0054046E /* NumberPropView.swift */; };
 		4F00790129C6AAB80054046E /* RecipeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00790029C6AAB80054046E /* RecipeType.swift */; };
 		4F00790329C6B3CC0054046E /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00790229C6B3CC0054046E /* RecipeDetailView.swift */; };
+		4F00790529C7292F0054046E /* UserThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00790429C7292F0054046E /* UserThunk.swift */; };
+		4F00790729C7299A0054046E /* UserReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00790629C7299A0054046E /* UserReducer.swift */; };
 		4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */; };
-		4F369FD429C38E7E0050138C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FD329C38E7E0050138C /* ContentView.swift */; };
 		4F369FD629C38E820050138C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD529C38E820050138C /* Assets.xcassets */; };
 		4F369FD929C38E820050138C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FD829C38E820050138C /* Preview Assets.xcassets */; };
 		4F369FE329C38E820050138C /* YapeRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FE229C38E820050138C /* YapeRecipesTests.swift */; };
@@ -54,6 +55,7 @@
 		4F36A01429C3A1220050138C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01329C3A1220050138C /* ButtonView.swift */; };
 		4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01629C3A2830050138C /* Button+Styles.swift */; };
 		4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01829C3BC850050138C /* TextField+Styles.swift */; };
+		4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFE829C74A7300BB1383 /* UserDetectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,9 +98,10 @@
 		4F0078FE29C6A74F0054046E /* NumberPropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPropView.swift; sourceTree = "<group>"; };
 		4F00790029C6AAB80054046E /* RecipeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeType.swift; sourceTree = "<group>"; };
 		4F00790229C6B3CC0054046E /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		4F00790429C7292F0054046E /* UserThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserThunk.swift; sourceTree = "<group>"; };
+		4F00790629C7299A0054046E /* UserReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReducer.swift; sourceTree = "<group>"; };
 		4F369FCE29C38E7E0050138C /* YapeRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesApp.swift; sourceTree = "<group>"; };
-		4F369FD329C38E7E0050138C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4F369FD529C38E820050138C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F369FD829C38E820050138C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F369FDE29C38E820050138C /* YapeRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YapeRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +113,7 @@
 		4F36A01329C3A1220050138C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4F36A01629C3A2830050138C /* Button+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Styles.swift"; sourceTree = "<group>"; };
 		4F36A01829C3BC850050138C /* TextField+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Styles.swift"; sourceTree = "<group>"; };
+		4F81FFE829C74A7300BB1383 /* UserDetectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 				4F0078CB29C63DE80054046E /* ProfileView.swift */,
 				4F0078CD29C63DF90054046E /* HomeView.swift */,
 				4F00790229C6B3CC0054046E /* RecipeDetailView.swift */,
+				4F81FFE829C74A7300BB1383 /* UserDetectView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				4F0078EB29C670ED0054046E /* RecipesReducer.swift */,
+				4F00790629C7299A0054046E /* UserReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				4F0078F529C677EE0054046E /* FetchThunk.swift */,
+				4F00790429C7292F0054046E /* UserThunk.swift */,
 			);
 			path = Thunk;
 			sourceTree = "<group>";
@@ -246,7 +253,6 @@
 				4F369FFC29C390FA0050138C /* Model */,
 				4F369FFB29C390E60050138C /* Views */,
 				4F369FD129C38E7E0050138C /* YapeRecipesApp.swift */,
-				4F369FD329C38E7E0050138C /* ContentView.swift */,
 				4F369FD529C38E820050138C /* Assets.xcassets */,
 				4F369FFD29C393100050138C /* GoogleService-Info.plist */,
 				4F369FD729C38E820050138C /* Preview Content */,
@@ -480,15 +486,16 @@
 				4F00790329C6B3CC0054046E /* RecipeDetailView.swift in Sources */,
 				4F0078EE29C671120054046E /* Action.swift in Sources */,
 				4F0078E129C665310054046E /* BindableStore.swift in Sources */,
-				4F369FD429C38E7E0050138C /* ContentView.swift in Sources */,
 				4F0078CE29C63DF90054046E /* HomeView.swift in Sources */,
 				4F0078CC29C63DE80054046E /* ProfileView.swift in Sources */,
 				4F0078DF29C664BA0054046E /* AppState.swift in Sources */,
 				4F0078F629C677EE0054046E /* FetchThunk.swift in Sources */,
 				4F0078F829C6833A0054046E /* Camera.swift in Sources */,
 				4F0078C529C629F50054046E /* MapRecipesView.swift in Sources */,
+				4F00790529C7292F0054046E /* UserThunk.swift in Sources */,
 				4F0078FF29C6A74F0054046E /* NumberPropView.swift in Sources */,
 				4F00790129C6AAB80054046E /* RecipeType.swift in Sources */,
+				4F00790729C7299A0054046E /* UserReducer.swift in Sources */,
 				4F0078E329C665500054046E /* CombineReducers.swift in Sources */,
 				4F0078C829C62B5E0054046E /* MapBoxMapView.swift in Sources */,
 				4F0078B329C551CE0054046E /* MainView.swift in Sources */,
@@ -498,6 +505,7 @@
 				4F0078F029C674BB0054046E /* Location.swift in Sources */,
 				4F0078B929C5EE650054046E /* AppCoordinator.swift in Sources */,
 				4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */,
+				4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */,
 				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
 				4F0078FA29C6990F0054046E /* RecipeCardView.swift in Sources */,
 				4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */,

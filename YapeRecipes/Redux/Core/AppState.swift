@@ -14,6 +14,7 @@ struct AppState: Equatable {
 
     var stateStatus = UUID()
     var recipes = Recipes()
+    var userProfile = UserProfile()
 }
 
 //MARK: RECIPES
@@ -27,3 +28,11 @@ struct Recipes: Identifiable, Equatable {
     var selected: Recipe?
 }
 
+//MARK: USER
+struct UserProfile: Identifiable,Equatable{
+    static func == (lhs: UserProfile, rhs: UserProfile) -> Bool {
+        return lhs.id == rhs.id
+    }
+    var id = UUID()
+    var currentUser: User?
+}
