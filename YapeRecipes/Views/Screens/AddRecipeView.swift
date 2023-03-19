@@ -12,26 +12,80 @@ struct AddRecipeView: View {
     @EnvironmentObject var store: AppStore
     @State var name = ""
     @State var textDescription = ""
+    @State private var sleepAmount = 8
+    @State private var cal = 100
+    
     
     var body: some View {
-        VStack{
-            TextField("Nombre", text: $name)
-                .textFieldStyle(RoundedTextField())
-            TextField("Descripción", text: $textDescription)
-                .textFieldStyle(RoundedTextField())
-            
-            ButtonImagePicker(action: {image in
-                self.store.dispatch(uploadImageThunk(image: image))
-            })
-            
-            Button {
-                let recipe = Recipe(name: name, textDescription: textDescription)
-                self.store.dispatch(addRecipeThunk(recipe: recipe))
-            } label: {
-                Text("Agregar Receta")
-            }
+        ScrollView{
+            VStack(alignment: .leading, spacing: 10.0){
+                
+                ZStack{
+                    ButtonImagePicker(action: {image in
+                        self.store.dispatch(uploadImageThunk(image: image))
+                    })
+                }
+                .padding(10.0)
+             
+                
+                
+                TextField("Nombre", text: $name)
+                    .textFieldStyle(RoundedTextField())
+                TextField("Descripción", text: $textDescription)
+                    .textFieldStyle(RoundedTextField())
+               
+                Divider()
+                
+                VStack(alignment: .leading){
+                    Text("Calorias")
+                        .bold()
+                    
+                    HStack{
+                        Image("icCal")
+                            .resizable()
+                            .frame(width: 24.0, height: 24.0)
+                        TextField("Calorias", value: $cal, format: .number)
+                            .textFieldStyle(RoundedTextField())
+                    }
+                    .padding(10.0)
+                }
+    
+                Divider()
+                VStack(alignment: .leading){
+                    Text("Tiempo de preparación")
+                        .bold()
+                    HStack{
+                        Image("icTime")
+                            .resizable()
+                            .frame(width: 24.0, height: 24.0)
+                        Stepper("\(sleepAmount) minutos", value: $sleepAmount, in: 5...60)
+                    }
+                    .padding(10.0)
+                }
 
+              
+                Divider()
+                VStack(alignment: .leading){
+                    Text("Tipo")
+                        .bold()
+                   FoodTypeSelector()
+                }
+                .padding(10.0)
+                
+              
+                
+                Button {
+                    let recipe = Recipe(name: name, textDescription: textDescription)
+                    self.store.dispatch(addRecipeThunk(recipe: recipe))
+                } label: {
+                    Text("Agregar Receta")
+                }
+
+            }
+            .padding(.horizontal, 10.0)
         }
+       
+   
     }
 }
 

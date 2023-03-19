@@ -64,6 +64,8 @@
 		4F81002229C78FF200BB1383 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81002129C78FF200BB1383 /* FirebaseStorage */; };
 		4F81002429C78FF200BB1383 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81002329C78FF200BB1383 /* FirebaseStorageCombine-Community */; };
 		4F81002629C79B6000BB1383 /* RecipeThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002529C79B6000BB1383 /* RecipeThunk.swift */; };
+		4F81002829C7ADA500BB1383 /* RoundedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002729C7ADA500BB1383 /* RoundedIconButton.swift */; };
+		4F81002A29C7AF3B00BB1383 /* FoodTypeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002929C7AF3B00BB1383 /* FoodTypeSelector.swift */; };
 		4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFE829C74A7300BB1383 /* UserDetectView.swift */; };
 		4F81FFED29C74FA000BB1383 /* Spanish.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFEF29C74FA000BB1383 /* Spanish.strings */; };
 		4F81FFF229C74FD800BB1383 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFF429C74FD800BB1383 /* English.strings */; };
@@ -134,6 +136,8 @@
 		4F81000C29C78B8D00BB1383 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		4F81000E29C78E7E00BB1383 /* ImageThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageThunk.swift; sourceTree = "<group>"; };
 		4F81002529C79B6000BB1383 /* RecipeThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeThunk.swift; sourceTree = "<group>"; };
+		4F81002729C7ADA500BB1383 /* RoundedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedIconButton.swift; sourceTree = "<group>"; };
+		4F81002929C7AF3B00BB1383 /* FoodTypeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeSelector.swift; sourceTree = "<group>"; };
 		4F81FFE829C74A7300BB1383 /* UserDetectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetectView.swift; sourceTree = "<group>"; };
 		4F81FFEE29C74FA000BB1383 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Spanish.strings; sourceTree = "<group>"; };
 		4F81FFF329C74FD800BB1383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
@@ -353,6 +357,8 @@
 				4F0078FE29C6A74F0054046E /* NumberPropView.swift */,
 				4F81FFF529C75C0600BB1383 /* ImageCardView.swift */,
 				4F81000929C78AAA00BB1383 /* ButtonImagePicker.swift */,
+				4F81002729C7ADA500BB1383 /* RoundedIconButton.swift */,
+				4F81002929C7AF3B00BB1383 /* FoodTypeSelector.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -575,6 +581,7 @@
 				4F00790729C7299A0054046E /* UserReducer.swift in Sources */,
 				4F81000D29C78B8D00BB1383 /* ImagePicker.swift in Sources */,
 				4F0078E329C665500054046E /* CombineReducers.swift in Sources */,
+				4F81002829C7ADA500BB1383 /* RoundedIconButton.swift in Sources */,
 				4F0078C829C62B5E0054046E /* MapBoxMapView.swift in Sources */,
 				4F81000A29C78AAA00BB1383 /* ButtonImagePicker.swift in Sources */,
 				4F0078B329C551CE0054046E /* MainView.swift in Sources */,
@@ -587,6 +594,7 @@
 				4F0078B929C5EE650054046E /* AppCoordinator.swift in Sources */,
 				4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */,
 				4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */,
+				4F81002A29C7AF3B00BB1383 /* FoodTypeSelector.swift in Sources */,
 				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
 				4F0078FA29C6990F0054046E /* RecipeCardView.swift in Sources */,
 				4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */,
