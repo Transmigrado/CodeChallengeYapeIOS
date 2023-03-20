@@ -29,10 +29,8 @@ struct FirebAuth {
             let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
 
             Auth.auth().signIn(with: credential) { result, error in
-                print("result->")
                 
               guard error == nil else {
-                  print("error->")
                   completion(error)
                   return
               }

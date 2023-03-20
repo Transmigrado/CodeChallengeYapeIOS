@@ -8,16 +8,26 @@
 import Foundation
 import SwiftUI
 import Coordinator
+import Swinject
 
 class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
     
+    var container: Container
+    var store: AppStore
+    
+    init(container: Container, store: AppStore){
+        self.container = container
+        self.store = store
+    }
     
     override func transition(for route: AppDestination) -> ViewTransition {
         switch route {
             case .main:
-                return .present(MainView())
+                let mainView: MainView = container.resolve(from : .main)
+                return .present(mainView)
             case .signin:
-                return .set(SigninView())
+                let signinView: SigninView = container.resolve(from : .signin)
+            return .set(signinView.environmentObject(store))
             case .recipeDetail:
                 return .push(RecipeDetailView())
             case .addRecipe:

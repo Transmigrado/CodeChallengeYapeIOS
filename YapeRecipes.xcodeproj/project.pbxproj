@@ -67,6 +67,8 @@
 		4F81002829C7ADA500BB1383 /* RoundedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002729C7ADA500BB1383 /* RoundedIconButton.swift */; };
 		4F81002A29C7AF3B00BB1383 /* FoodTypeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002929C7AF3B00BB1383 /* FoodTypeSelector.swift */; };
 		4F81002C29C7CE2400BB1383 /* ItemTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002B29C7CE2400BB1383 /* ItemTab.swift */; };
+		4F81003929C8062800BB1383 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81003829C8062800BB1383 /* Swinject */; };
+		4F81003C29C808C700BB1383 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81003B29C808C700BB1383 /* Inject.swift */; };
 		4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFE829C74A7300BB1383 /* UserDetectView.swift */; };
 		4F81FFED29C74FA000BB1383 /* Spanish.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFEF29C74FA000BB1383 /* Spanish.strings */; };
 		4F81FFF229C74FD800BB1383 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFF429C74FD800BB1383 /* English.strings */; };
@@ -140,6 +142,7 @@
 		4F81002729C7ADA500BB1383 /* RoundedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedIconButton.swift; sourceTree = "<group>"; };
 		4F81002929C7AF3B00BB1383 /* FoodTypeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeSelector.swift; sourceTree = "<group>"; };
 		4F81002B29C7CE2400BB1383 /* ItemTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTab.swift; sourceTree = "<group>"; };
+		4F81003B29C808C700BB1383 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		4F81FFE829C74A7300BB1383 /* UserDetectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetectView.swift; sourceTree = "<group>"; };
 		4F81FFEE29C74FA000BB1383 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Spanish.strings; sourceTree = "<group>"; };
 		4F81FFF329C74FD800BB1383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
@@ -161,6 +164,7 @@
 				4F81FFF929C75ED900BB1383 /* GoogleSignIn in Frameworks */,
 				4F0078DB29C664680054046E /* ReSwift in Frameworks */,
 				4F81001E29C78FF200BB1383 /* FirebaseFirestore in Frameworks */,
+				4F81003929C8062800BB1383 /* Swinject in Frameworks */,
 				4F81002029C78FF200BB1383 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				4F81001829C78FF200BB1383 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				4F0078C329C629DE0054046E /* MapboxMaps in Frameworks */,
@@ -285,6 +289,7 @@
 		4F369FD029C38E7E0050138C /* YapeRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				4F81003A29C8084900BB1383 /* Inject */,
 				4F81FFFF29C76E0B00BB1383 /* Utils */,
 				4F81FFFC29C75FF300BB1383 /* Info.plist */,
 				4F81FFEC29C74DA200BB1383 /* Assets */,
@@ -383,6 +388,14 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		4F81003A29C8084900BB1383 /* Inject */ = {
+			isa = PBXGroup;
+			children = (
+				4F81003B29C808C700BB1383 /* Inject.swift */,
+			);
+			path = Inject;
+			sourceTree = "<group>";
+		};
 		4F81FFEC29C74DA200BB1383 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +448,7 @@
 				4F81001F29C78FF200BB1383 /* FirebaseFirestoreCombine-Community */,
 				4F81002129C78FF200BB1383 /* FirebaseStorage */,
 				4F81002329C78FF200BB1383 /* FirebaseStorageCombine-Community */,
+				4F81003829C8062800BB1383 /* Swinject */,
 			);
 			productName = YapeRecipes;
 			productReference = 4F369FCE29C38E7E0050138C /* YapeRecipes.app */;
@@ -518,6 +532,7 @@
 				4F81FFF729C75ED900BB1383 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				4F81000429C7752100BB1383 /* XCRemoteSwiftPackageReference "SwiftUI-FAB" */,
 				4F81001029C78FF200BB1383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4F81003729C8062800BB1383 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 4F369FCF29C38E7E0050138C /* Products */;
 			projectDirPath = "";
@@ -582,6 +597,7 @@
 				4F81FFF629C75C0600BB1383 /* ImageCardView.swift in Sources */,
 				4F00790129C6AAB80054046E /* RecipeType.swift in Sources */,
 				4F00790729C7299A0054046E /* UserReducer.swift in Sources */,
+				4F81003C29C808C700BB1383 /* Inject.swift in Sources */,
 				4F81000D29C78B8D00BB1383 /* ImagePicker.swift in Sources */,
 				4F0078E329C665500054046E /* CombineReducers.swift in Sources */,
 				4F81002829C7ADA500BB1383 /* RoundedIconButton.swift in Sources */,
@@ -1007,6 +1023,14 @@
 				kind = branch;
 			};
 		};
+		4F81003729C8062800BB1383 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		4F81FFF729C75ED900BB1383 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
@@ -1097,6 +1121,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F81001029C78FF200BB1383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		4F81003829C8062800BB1383 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F81003729C8062800BB1383 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 		4F81FFF829C75ED900BB1383 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;

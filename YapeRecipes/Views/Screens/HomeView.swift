@@ -13,7 +13,7 @@ import SwiftUI_FAB
 
 struct HomeView: View {
     
-    @Coordinator(for: AppDestination.self) var coordinator
+    //@Coordinator(for: AppDestination.self) var coordinator
     @EnvironmentObject var store: AppStore
     
     var body: some View {
@@ -26,14 +26,14 @@ struct HomeView: View {
                     }
                 }
                 .floatingActionButton(color: Color("Main"), image: Image(systemName: "plus").foregroundColor(.white)) {
-                    coordinator.trigger(.addRecipe)
+                    //coordinator.trigger(.addRecipe)
                 }
                 .navigationTitle("Recetas")
                 .navigationBarTitleDisplayMode(.inline)
             }
         }
         .onAppear{
-            self.store.dispatch(fetchThunk())
+            //self.store.dispatch(fetchThunk())
         }
     }
 }

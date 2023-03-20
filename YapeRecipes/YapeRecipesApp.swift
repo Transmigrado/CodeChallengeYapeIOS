@@ -10,14 +10,16 @@ import Firebase
 import Coordinator
 import ReSwift
 import ReSwiftThunk
+import Swinject
 
 @main
 struct YapeRecipesApp: App {
     
-    @StateObject var coordinator = AppCoordinator()
+    @StateObject private var coordinator: AppCoordinator
     
     let thunkMiddleware: Middleware<AppState> = createThunkMiddleware()
     let store: AppStore?
+    let container = Container()
    
     init(){
        
@@ -26,19 +28,29 @@ struct YapeRecipesApp: App {
         )
 
         store = AppStore(reducer: reducer, state: AppState(), middleware: [thunkMiddleware])
+
+        let coordinatorWrapped = AppCoordinator(container: container, store: store!)
+        self._coordinator = StateObject(wrappedValue: coordinatorWrapped)
+        
+        container.register(from: .userDetector, value: UserDetectView(container: container))
+        container.register(from: .main, value: MainView())
+        container.register(from: .signin, value: SigninView())
+        
       
         FirebaseApp.configure()
        
     }
     
+    var root: some View {
+         let view: UserDetectView = container.resolve(from: .userDetector)
+        
+        return view.coordinator(coordinator).environmentObject(store!)
+    }
+    
 
     var body: some Scene {
         WindowGroup {
-            UserDetectView()
-                .environmentObject(store!)
-                .coordinator(coordinator)
+            root
         }
-     
-        
     }
 }

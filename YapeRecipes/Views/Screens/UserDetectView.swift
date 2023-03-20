@@ -7,19 +7,31 @@
 
 import SwiftUI
 import Firebase
+import Swinject
+import Coordinator
 
 struct UserDetectView: View {
+    
+
+    var container: Container
+    
+    var main: some View {
+         let view: MainView = container.resolve(from: .main)
+        return view
+    }
+    
+    var signin: some View {
+        let view: SigninView = container.resolve(from: .signin)
+       return view
+    }
+    
     var body: some View {
         if(Auth.auth().currentUser == nil){
-             SigninView()
+            signin
         } else {
-             MainView()
+            main
         }
     }
 }
 
-struct UserDetectView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserDetectView()
-    }
-}
+
