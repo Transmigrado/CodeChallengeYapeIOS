@@ -15,6 +15,8 @@ struct FoodTypeSelector: View {
             RoundedIconButton(icon: "icSoup", propName: "Sopa", normalColor: Color("Main"), selectedColor: Color("Selected"))
             Spacer()
             RoundedIconButton(icon: "icMainDish", propName: "Principal", normalColor: Color("Main"), selectedColor: Color("Selected"))
+            Spacer()
+            RoundedIconButton(icon: "icCoctel", propName: "Coctel", normalColor: Color("Main"), selectedColor: Color("Selected"))
         }
         .padding(.horizontal, 10.0)
     }

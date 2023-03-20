@@ -25,6 +25,7 @@ struct Recipes: Identifiable, Equatable {
     
     var id = UUID()
     var list: [Recipe] = []
+    var searchedList: [Recipe] = []
     var selected: Recipe?
 }
 

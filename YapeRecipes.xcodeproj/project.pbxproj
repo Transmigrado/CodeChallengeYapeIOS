@@ -69,6 +69,7 @@
 		4F81002C29C7CE2400BB1383 /* ItemTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002B29C7CE2400BB1383 /* ItemTab.swift */; };
 		4F81003929C8062800BB1383 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81003829C8062800BB1383 /* Swinject */; };
 		4F81003C29C808C700BB1383 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81003B29C808C700BB1383 /* Inject.swift */; };
+		4F81004029C8A3F700BB1383 /* SearchThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81003F29C8A3F700BB1383 /* SearchThunk.swift */; };
 		4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFE829C74A7300BB1383 /* UserDetectView.swift */; };
 		4F81FFED29C74FA000BB1383 /* Spanish.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFEF29C74FA000BB1383 /* Spanish.strings */; };
 		4F81FFF229C74FD800BB1383 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFF429C74FD800BB1383 /* English.strings */; };
@@ -143,6 +144,7 @@
 		4F81002929C7AF3B00BB1383 /* FoodTypeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeSelector.swift; sourceTree = "<group>"; };
 		4F81002B29C7CE2400BB1383 /* ItemTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTab.swift; sourceTree = "<group>"; };
 		4F81003B29C808C700BB1383 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
+		4F81003F29C8A3F700BB1383 /* SearchThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchThunk.swift; sourceTree = "<group>"; };
 		4F81FFE829C74A7300BB1383 /* UserDetectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetectView.swift; sourceTree = "<group>"; };
 		4F81FFEE29C74FA000BB1383 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Spanish.strings; sourceTree = "<group>"; };
 		4F81FFF329C74FD800BB1383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				4F00790429C7292F0054046E /* UserThunk.swift */,
 				4F81000E29C78E7E00BB1383 /* ImageThunk.swift */,
 				4F81002529C79B6000BB1383 /* RecipeThunk.swift */,
+				4F81003F29C8A3F700BB1383 /* SearchThunk.swift */,
 			);
 			path = Thunk;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				4F0078C529C629F50054046E /* MapRecipesView.swift in Sources */,
 				4F00790529C7292F0054046E /* UserThunk.swift in Sources */,
 				4F0078FF29C6A74F0054046E /* NumberPropView.swift in Sources */,
+				4F81004029C8A3F700BB1383 /* SearchThunk.swift in Sources */,
 				4F81002629C79B6000BB1383 /* RecipeThunk.swift in Sources */,
 				4F81FFF629C75C0600BB1383 /* ImageCardView.swift in Sources */,
 				4F00790129C6AAB80054046E /* RecipeType.swift in Sources */,

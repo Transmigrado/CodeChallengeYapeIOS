@@ -26,12 +26,10 @@ struct HomeView: View {
                     HStack{
                         TextField("", text: $searchText, prompt: Text("Buscar receta").foregroundColor(.gray))
                             .textFieldStyle(SearchTextfield())
-                           
-             
                     }
                     .padding(10.0)
                     .background(.white)
-                    ForEach(self.store.state.recipes.list){
+                    ForEach(self.store.state.recipes.searchedList){
                         RecipeCardView(recipe: $0)
                     }
                 }
@@ -44,6 +42,9 @@ struct HomeView: View {
         }
         .onAppear{
             self.store.dispatch(fetchThunk())
+        }
+        .onChange(of: searchText) { _ in
+            self.store.dispatch(searchListThunk(searchText: searchText))
         }
     }
 }

@@ -10,11 +10,10 @@ import SwiftUI
 struct AddRecipeView: View {
     
     @EnvironmentObject var store: AppStore
-    @State var name = ""
-    @State var textDescription = ""
+    @State private var name = ""
+    @State private var textDescription = ""
     @State private var sleepAmount = 8
     @State private var cal = 100
-    
     
     var body: some View {
         ScrollView{
@@ -27,10 +26,9 @@ struct AddRecipeView: View {
                 }
                 .padding(10.0)
              
-                
-                
                 TextField("Nombre", text: $name)
                     .textFieldStyle(RoundedTextField())
+                
                 TextField("Descripción", text: $textDescription)
                     .textFieldStyle(RoundedTextField())
                

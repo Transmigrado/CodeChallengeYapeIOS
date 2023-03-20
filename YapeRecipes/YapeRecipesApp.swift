@@ -44,12 +44,10 @@ struct YapeRecipesApp: App {
     }
     
     var root: some View {
-         let view: UserDetectView = container.resolve(from: .userDetector)
-        
+        let view: UserDetectView = container.resolve(from: .userDetector)
         return view.coordinator(coordinator).environmentObject(store!)
     }
     
-
     var body: some Scene {
         WindowGroup {
             root
