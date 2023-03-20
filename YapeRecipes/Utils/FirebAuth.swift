@@ -30,10 +30,7 @@ struct FirebAuth {
 
             Auth.auth().signIn(with: credential) { result, error in
                 
-              guard error == nil else {
-                  completion(error)
-                  return
-              }
+                completion(error)
 
             }
         }

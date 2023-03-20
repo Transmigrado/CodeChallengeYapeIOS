@@ -43,7 +43,6 @@
 		4F369FED29C38E830050138C /* YapeRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FEC29C38E830050138C /* YapeRecipesUITests.swift */; };
 		4F369FEF29C38E830050138C /* YapeRecipesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F369FEE29C38E830050138C /* YapeRecipesUITestsLaunchTests.swift */; };
 		4F369FFE29C393100050138C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F369FFD29C393100050138C /* GoogleService-Info.plist */; };
-		4F36A01429C3A1220050138C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01329C3A1220050138C /* ButtonView.swift */; };
 		4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01629C3A2830050138C /* Button+Styles.swift */; };
 		4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36A01829C3BC850050138C /* TextField+Styles.swift */; };
 		4F81000129C76E1500BB1383 /* FirebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81000029C76E1500BB1383 /* FirebAuth.swift */; };
@@ -70,6 +69,9 @@
 		4F81003929C8062800BB1383 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81003829C8062800BB1383 /* Swinject */; };
 		4F81003C29C808C700BB1383 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81003B29C808C700BB1383 /* Inject.swift */; };
 		4F81004029C8A3F700BB1383 /* SearchThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81003F29C8A3F700BB1383 /* SearchThunk.swift */; };
+		4F81004229C8ACF100BB1383 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81004129C8ACF100BB1383 /* SearchView.swift */; };
+		4F81004429C9105600BB1383 /* SigninWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81004329C9105600BB1383 /* SigninWithEmailView.swift */; };
+		4F81004629C9148900BB1383 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81004529C9148900BB1383 /* SignupView.swift */; };
 		4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFE829C74A7300BB1383 /* UserDetectView.swift */; };
 		4F81FFED29C74FA000BB1383 /* Spanish.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFEF29C74FA000BB1383 /* Spanish.strings */; };
 		4F81FFF229C74FD800BB1383 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F81FFF429C74FD800BB1383 /* English.strings */; };
@@ -130,7 +132,6 @@
 		4F369FEC29C38E830050138C /* YapeRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesUITests.swift; sourceTree = "<group>"; };
 		4F369FEE29C38E830050138C /* YapeRecipesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4F369FFD29C393100050138C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4F36A01329C3A1220050138C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4F36A01629C3A2830050138C /* Button+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Styles.swift"; sourceTree = "<group>"; };
 		4F36A01829C3BC850050138C /* TextField+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Styles.swift"; sourceTree = "<group>"; };
 		4F81000029C76E1500BB1383 /* FirebAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebAuth.swift; sourceTree = "<group>"; };
@@ -145,6 +146,9 @@
 		4F81002B29C7CE2400BB1383 /* ItemTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTab.swift; sourceTree = "<group>"; };
 		4F81003B29C808C700BB1383 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		4F81003F29C8A3F700BB1383 /* SearchThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchThunk.swift; sourceTree = "<group>"; };
+		4F81004129C8ACF100BB1383 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4F81004329C9105600BB1383 /* SigninWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithEmailView.swift; sourceTree = "<group>"; };
+		4F81004529C9148900BB1383 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		4F81FFE829C74A7300BB1383 /* UserDetectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetectView.swift; sourceTree = "<group>"; };
 		4F81FFEE29C74FA000BB1383 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Spanish.strings; sourceTree = "<group>"; };
 		4F81FFF329C74FD800BB1383 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
@@ -207,6 +211,9 @@
 				4F00790229C6B3CC0054046E /* RecipeDetailView.swift */,
 				4F81FFE829C74A7300BB1383 /* UserDetectView.swift */,
 				4F81000229C774A300BB1383 /* AddRecipeView.swift */,
+				4F81004129C8ACF100BB1383 /* SearchView.swift */,
+				4F81004329C9105600BB1383 /* SigninWithEmailView.swift */,
+				4F81004529C9148900BB1383 /* SignupView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -362,7 +369,6 @@
 			children = (
 				4F81000B29C78B7F00BB1383 /* utils */,
 				4F0078C629C62B4D0054046E /* map */,
-				4F36A01329C3A1220050138C /* ButtonView.swift */,
 				4F0078F929C6990F0054046E /* RecipeCardView.swift */,
 				4F0078FE29C6A74F0054046E /* NumberPropView.swift */,
 				4F81FFF529C75C0600BB1383 /* ImageCardView.swift */,
@@ -595,11 +601,13 @@
 				4F0078C529C629F50054046E /* MapRecipesView.swift in Sources */,
 				4F00790529C7292F0054046E /* UserThunk.swift in Sources */,
 				4F0078FF29C6A74F0054046E /* NumberPropView.swift in Sources */,
+				4F81004229C8ACF100BB1383 /* SearchView.swift in Sources */,
 				4F81004029C8A3F700BB1383 /* SearchThunk.swift in Sources */,
 				4F81002629C79B6000BB1383 /* RecipeThunk.swift in Sources */,
 				4F81FFF629C75C0600BB1383 /* ImageCardView.swift in Sources */,
 				4F00790129C6AAB80054046E /* RecipeType.swift in Sources */,
 				4F00790729C7299A0054046E /* UserReducer.swift in Sources */,
+				4F81004629C9148900BB1383 /* SignupView.swift in Sources */,
 				4F81003C29C808C700BB1383 /* Inject.swift in Sources */,
 				4F81000D29C78B8D00BB1383 /* ImagePicker.swift in Sources */,
 				4F0078E329C665500054046E /* CombineReducers.swift in Sources */,
@@ -621,8 +629,8 @@
 				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
 				4F0078FA29C6990F0054046E /* RecipeCardView.swift in Sources */,
 				4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */,
-				4F36A01429C3A1220050138C /* ButtonView.swift in Sources */,
 				4F0078D629C659830054046E /* Recipe.swift in Sources */,
+				4F81004429C9105600BB1383 /* SigninWithEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

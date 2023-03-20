@@ -14,6 +14,9 @@ enum InjectName:String {
     case signin
     case detail
     case addRecipe
+    case search
+    case signinWithEmail
+    case signup
 }
 
 extension Container {

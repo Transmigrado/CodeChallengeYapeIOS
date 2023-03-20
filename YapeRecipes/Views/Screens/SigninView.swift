@@ -34,18 +34,46 @@ struct SigninView: View {
                 
             Spacer()
             
-            VStack{
+            VStack(spacing: 20.0){
+                
+                Button {
+                    self.coordinator.trigger(.signinWithEmail)
+                } label: {
+                    HStack{
+                        Image("icEmail")
+                        Text("Contectar con correo")
+                            .foregroundColor(.black)
+                            .bold()
+                    }
+                }
+                .buttonStyle(Rounded(color: .white))
+                
                 Button {
                     self.store.dispatch(googleSigninThunk {
                         self.coordinator.trigger(.main)
                     })
                 } label: {
-                    Text("Contectar con google")
+                    HStack{
+                        Image("icGoogle")
+                        Text("Contectar con google")
+                            .foregroundColor(.black)
+                            .bold()
+                    }
                 }
+                .buttonStyle(Rounded(color: .white))
             }
            
 
             Spacer()
+            
+            
+            Button {
+                self.coordinator.trigger(.signup)
+            } label: {
+                Text("¿Aún no tienes cuenta?, crea una gratis")
+                    .foregroundColor(Color("Main"))
+            }
+            
               
         }
         .frame( alignment: .top)

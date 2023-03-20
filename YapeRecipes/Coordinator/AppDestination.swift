@@ -12,4 +12,7 @@ enum AppDestination {
     case main
     case recipeDetail
     case addRecipe
+    case search
+    case signinWithEmail
+    case signup
 }

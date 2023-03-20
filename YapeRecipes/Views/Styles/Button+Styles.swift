@@ -8,15 +8,24 @@
 import SwiftUI
 
 struct Rounded: ButtonStyle {
+    
+    var color: Color
+    
+    init(color: Color){
+        self.color = color;
+    }
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
                 
-                .padding(.horizontal, 10.0)
-                .padding(.vertical, 8.0)
                 
-                .background(Color("Main"))
+                .frame(maxWidth: .infinity)
+                .frame(height: 30.0)
+                .padding(.horizontal, 10.0)
+                .padding(.vertical, 12.0)
+                .background(color)
                 .clipShape(Capsule(style: .continuous))
-                .shadow(color: Color("Shadow"), radius: 4, x: 0, y: 5)
+                .shadow(color: Color("LightShadow"), x: 0, y: 5, blur: 20)
     }
 }
 

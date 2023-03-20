@@ -24,7 +24,7 @@ class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
         switch route {
             case .main:
                 let mainView: MainView = container.resolve(from : .main)
-                return .present(mainView)
+                return .set(mainView.environmentObject(store))
             case .signin:
                 let signinView: SigninView = container.resolve(from : .signin)
                 return .set(signinView.environmentObject(store))
@@ -34,6 +34,15 @@ class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
             case .addRecipe:
                 let addRecipeView: AddRecipeView = container.resolve(from : .addRecipe)
                 return .push(addRecipeView)
+            case .search:
+                let searchView: SearchView = container.resolve(from : .search)
+                return .present(searchView.environmentObject(store))
+            case .signinWithEmail:
+                let signinWithEmailView: SigninWithEmailView = container.resolve(from : .signinWithEmail)
+                return .present(signinWithEmailView.environmentObject(store))
+            case .signup:
+                let signupView: SignupView = container.resolve(from : .signup)
+                return .present(signupView.environmentObject(store))
         }
     }
 }
