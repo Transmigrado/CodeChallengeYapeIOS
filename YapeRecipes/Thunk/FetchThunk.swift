@@ -17,6 +17,7 @@ func fetchThunk() -> Thunk<AppState>{
         let db = Firestore.firestore()
         db.collection("Recipes")
             .getDocuments { snapshoot, error in
+                
                 if(error == nil){
                     let recipes = (snapshoot?.documents.map{Recipe(snapshot: $0)})!
                     dispatch(FetchList<Recipe>(list: recipes))

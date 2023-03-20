@@ -21,4 +21,23 @@ struct RoundedTextField: TextFieldStyle {
     }
 }
 
+struct SearchTextfield: TextFieldStyle {
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        configuration
+            .padding(.vertical, 10)
+            .padding(.horizontal, 24)
+            .padding(.leading, 20.0)
+            .background(Color("WinterWhite"))
+            .cornerRadius(10.0)
+            .overlay(
+                ZStack{
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .stroke(Color("Gray"), lineWidth: 1)
+                    Image("icMagnesglass")
+                        .position(x: 24.0,y: 20.0)
+                }
+            )
+           
+    }
+}
 

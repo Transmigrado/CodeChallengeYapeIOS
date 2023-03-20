@@ -13,27 +13,37 @@ import SwiftUI_FAB
 
 struct HomeView: View {
     
-    //@Coordinator(for: AppDestination.self) var coordinator
+    @Coordinator(for: AppDestination.self) var coordinator
     @EnvironmentObject var store: AppStore
+    @State var searchText = ""
     
     var body: some View {
         NavigationView {
             
-            ZStack{
+            VStack{
+               
                 ScrollView{
+                    HStack{
+                        TextField("", text: $searchText, prompt: Text("Buscar receta").foregroundColor(.gray))
+                            .textFieldStyle(SearchTextfield())
+                           
+             
+                    }
+                    .padding(10.0)
+                    .background(.white)
                     ForEach(self.store.state.recipes.list){
                         RecipeCardView(recipe: $0)
                     }
                 }
                 .floatingActionButton(color: Color("Main"), image: Image(systemName: "plus").foregroundColor(.white)) {
-                    //coordinator.trigger(.addRecipe)
+                    coordinator.trigger(.addRecipe)
                 }
                 .navigationTitle("Recetas")
-                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarTitleDisplayMode(.automatic)
             }
         }
         .onAppear{
-            //self.store.dispatch(fetchThunk())
+            self.store.dispatch(fetchThunk())
         }
     }
 }

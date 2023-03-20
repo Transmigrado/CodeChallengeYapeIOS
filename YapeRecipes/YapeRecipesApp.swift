@@ -35,6 +35,8 @@ struct YapeRecipesApp: App {
         container.register(from: .userDetector, value: UserDetectView(container: container))
         container.register(from: .main, value: MainView())
         container.register(from: .signin, value: SigninView())
+        container.register(from: .detail, value: RecipeDetailView())
+        container.register(from: .addRecipe, value: AddRecipeView())
         
       
         FirebaseApp.configure()

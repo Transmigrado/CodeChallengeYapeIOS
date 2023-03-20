@@ -27,11 +27,13 @@ class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
                 return .present(mainView)
             case .signin:
                 let signinView: SigninView = container.resolve(from : .signin)
-            return .set(signinView.environmentObject(store))
+                return .set(signinView.environmentObject(store))
             case .recipeDetail:
-                return .push(RecipeDetailView())
+                let detailView: RecipeDetailView = container.resolve(from : .detail)
+                return .push(detailView)
             case .addRecipe:
-                return .push(AddRecipeView())
+                let addRecipeView: AddRecipeView = container.resolve(from : .addRecipe)
+                return .push(addRecipeView)
         }
     }
 }
