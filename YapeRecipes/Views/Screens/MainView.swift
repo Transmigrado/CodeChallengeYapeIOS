@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State private var selectedItem = 0
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selectedItem) {
             HomeView()
-                .tabItem({ Image("icHome") })
+                .tabItem({ ItemTab(icon: "icHome", title: "Home", selected: selectedItem == 0) })
                 .tag(0)
             MapRecipesView()
-                .tabItem({ Image("icMap") })
+                .tabItem({ ItemTab(icon: "icMap", title: "Mapa",selected: selectedItem == 1) })
                 .tag(1)
             ProfileView()
-                .tabItem({ Image("icUser") })
+                .tabItem({ ItemTab(icon: "icUser", title: "Perfil", selected: selectedItem == 2) })
                 .tag(2)
         }
         .accentColor(Color.accentColor)

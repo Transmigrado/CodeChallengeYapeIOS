@@ -19,7 +19,10 @@ struct RecipeDetailView: View {
                 .frame(height: 200.0)
  
             Text(self.store.state.recipes.selected?.name ?? "")
+            Spacer()
         }
+        .frame(alignment: .top)
+
         
     }
 }

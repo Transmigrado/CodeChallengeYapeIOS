@@ -25,7 +25,7 @@ struct HomeView: View {
                         RecipeCardView(recipe: $0)
                     }
                 }
-                .floatingActionButton(color: Color.blue, image: Image(systemName: "plus").foregroundColor(.white)) {
+                .floatingActionButton(color: Color("Main"), image: Image(systemName: "plus").foregroundColor(.white)) {
                     coordinator.trigger(.addRecipe)
                 }
                 .navigationTitle("Recetas")

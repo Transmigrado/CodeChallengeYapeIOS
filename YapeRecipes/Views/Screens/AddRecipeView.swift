@@ -37,8 +37,12 @@ struct AddRecipeView: View {
                 Divider()
                 
                 VStack(alignment: .leading){
-                    Text("Calorias")
-                        .bold()
+                    
+                    HStack(spacing:5.0){
+                        Text("Calorias")
+                            .bold()
+                        Text("Por cada 100 grs")
+                    }
                     
                     HStack{
                         Image("icCal")

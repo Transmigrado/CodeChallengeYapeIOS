@@ -39,14 +39,17 @@ func signinThunk(email:String, password: String) -> Thunk<AppState>{
 }
 
 
-func googleSigninThunk() -> Thunk<AppState>{
+func googleSigninThunk(callback: @escaping () -> ()) -> Thunk<AppState>{
     return Thunk<AppState> { dispatch, getState in
 
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
         guard let rootViewController = windowScene.windows.first?.rootViewController else { return }
         
         FirebAuth.share.signinWithGoogle(presenting: rootViewController) { error in
-            
+            print("error: \(error)")
+            if(error == nil){
+                callback()
+            }
         }
     }
 }
