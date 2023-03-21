@@ -9,7 +9,12 @@ import Foundation
 import SwiftUI
 import Firebase
 
-struct Recipe: Identifiable {
+struct Recipe: Identifiable, Equatable {
+    
+    static func == (lhs: Recipe, rhs: Recipe) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
     var id = UUID()
     var name: String?
     var cover: String?
@@ -21,7 +26,7 @@ struct Recipe: Identifiable {
     
     var location: Location?
     
-    
+  
 }
 
 extension Recipe {
@@ -41,4 +46,3 @@ extension Recipe {
         
     }
 }
-
