@@ -11,6 +11,7 @@ struct SigninWithEmailView: View {
     
     
     @ObservedObject var model = SigninModel()
+    @EnvironmentObject var store: AppStore
     
     var body: some View {
         VStack{
@@ -19,16 +20,13 @@ struct SigninWithEmailView: View {
 
             VStack{
                 VStack(spacing: 10.0){
-                    
-                
-                    
                     CustomTextField(text: $model.email, placeholder: "Correo")
                         .validation(model.emailValidation) { message in
                                     Text(message)
                                             .foregroundColor(Color.red)
                                             .font(.caption)
                                     }
-                    CustomTextField(text: $model.email, placeholder: "Contraseña")
+                    CustomTextField(text: $model.password, placeholder: "Contraseña")
                         .validation(model.passwordValidation) { message in
                                     Text(message)
                                             .foregroundColor(Color.red)
@@ -40,7 +38,7 @@ struct SigninWithEmailView: View {
                 Spacer()
 
                 Button {
-                   
+                    self.store.dispatch(signinThunk(email: model.email, password: model.password))
                 } label: {
                     HStack{
                         Text("Crear")

@@ -25,9 +25,20 @@ final class YapeRecipesUITests: XCTestCase {
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
+    
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        app.buttons["Contectar con correo"].tap()
+        
+        let textfieldEmail = app.textFields["Correo"]
+        textfieldEmail.tap()
+        textfieldEmail.typeText("transmigrado@gmail.com")
+        
+        let textfieldPassword = app.textFields["Contraseña"]
+        textfieldPassword.tap()
+        textfieldPassword.typeText("123456")
+ 
+            
     }
 
     func testLaunchPerformance() throws {
@@ -38,4 +49,6 @@ final class YapeRecipesUITests: XCTestCase {
             }
         }
     }
+    
+    
 }
