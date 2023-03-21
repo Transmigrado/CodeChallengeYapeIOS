@@ -253,6 +253,15 @@
       }
     },
     {
+      "identity" : "swiftuiformvalidator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ShabanKamell/SwiftUIFormValidator",
+      "state" : {
+        "revision" : "f53df07ac1384c2f9ee488bd229821d0ab341174",
+        "version" : "0.20.0"
+      }
+    },
+    {
       "identity" : "swiftuix",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SwiftUIX/SwiftUIX.git",

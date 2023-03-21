@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct RoundedTextField: TextFieldStyle {
+    
+    var colorStroke: Color
+    
+    init(colorStroke: Color = Color("Gray")){
+        self.colorStroke = colorStroke;
+    }
+    
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .padding(.vertical)
@@ -15,7 +22,7 @@ struct RoundedTextField: TextFieldStyle {
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
                     .inset(by: 5)
-                    .stroke(Color("Gray"), lineWidth: 1)
+                    .stroke(colorStroke, lineWidth: 1)
             )
            
     }

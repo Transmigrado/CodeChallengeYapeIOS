@@ -18,66 +18,73 @@ struct SigninView: View {
     var body: some View {
         VStack {
             
-            ImageCardView()
-            
-            VStack(spacing: 5.0){
-                Text("Descubre el mejor sabor")
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 28))
-                    .bold()
-                Text("Explora y comparte recetas con toda la comunidad")
-                    .font(.system(size: 14))
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 20.0)
+            ZStack{
+                ImageCardView()
             }
-            .padding(.vertical, 20.0)
-                
-            Spacer()
+            .padding(8.0)
+          
             
-            VStack(spacing: 20.0){
-                
-                Button {
-                    self.coordinator.trigger(.signinWithEmail)
-                } label: {
-                    HStack{
-                        Image("icEmail")
-                        Text("Contectar con correo")
-                            .foregroundColor(.black)
-                            .bold()
-                    }
+            VStack{
+                VStack(spacing: 5.0){
+                    Text("Descubre el mejor sabor")
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 28))
+                        .bold()
+                    Text("Explora y comparte recetas con toda la comunidad")
+                        .font(.system(size: 14))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 20.0)
                 }
-                .buttonStyle(Rounded(color: .white))
+                .padding(.vertical, 20.0)
+                    
+                Spacer()
                 
-                Button {
-                    self.store.dispatch(googleSigninThunk {
-                        self.coordinator.trigger(.main)
-                    })
-                } label: {
-                    HStack{
-                        Image("icGoogle")
-                        Text("Contectar con google")
-                            .foregroundColor(.black)
-                            .bold()
+                VStack(spacing: 20.0){
+                    
+                    Button {
+                        self.coordinator.trigger(.signinWithEmail)
+                    } label: {
+                        HStack{
+                            Image("icEmail")
+                            Text("Contectar con correo")
+                                .foregroundColor(.black)
+                                .bold()
+                        }
                     }
+                    .buttonStyle(Rounded(color: .white))
+                    
+                    Button {
+                        self.store.dispatch(googleSigninThunk {
+                            self.coordinator.trigger(.main)
+                        })
+                    } label: {
+                        HStack{
+                            Image("icGoogle")
+                            Text("Contectar con google")
+                                .foregroundColor(.black)
+                                .bold()
+                        }
+                    }
+                    .buttonStyle(Rounded(color: .white))
                 }
-                .buttonStyle(Rounded(color: .white))
-            }
-           
+               
 
-            Spacer()
-            
-            
-            Button {
-                self.coordinator.trigger(.signup)
-            } label: {
-                Text("¿Aún no tienes cuenta?, crea una gratis")
-                    .foregroundColor(Color("Main"))
+                Spacer()
+                
+                
+                Button {
+                    self.coordinator.trigger(.signup)
+                } label: {
+                    Text("¿Aún no tienes cuenta?, crea una gratis")
+                        .foregroundColor(Color("Main"))
+                }
             }
+            .padding(20.0)
             
               
         }
-        .frame( alignment: .top)
-        .padding(20.0)
+        .ignoresSafeArea(.all, edges: .top)
+     
     }
 
 }

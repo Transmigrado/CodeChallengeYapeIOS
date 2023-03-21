@@ -30,6 +30,23 @@ struct Rounded: ButtonStyle {
 }
 
 
+struct CircleButton: ButtonStyle {
+    
+   
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .frame(width: 42.0, height: 42.0)
+                .background(.white)
+                .clipShape(Circle())
+                .shadow(color: Color("LightShadow"), x: 0, y: 5, blur: 20)
+                .scaleEffect(configuration.isPressed ? 1.3 : 1)
+                .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
+    }
+}
+
+
+
 
 struct GradientBackgroundStyle: ButtonStyle {
 

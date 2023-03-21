@@ -15,7 +15,7 @@ struct ImageCardView: View {
         .frame(maxWidth: .infinity )
         .frame( height: 300.0)
         .background(Color("Main"))
-        .cornerRadius(20.0)
+        .cornerRadius(40.0)
         .shadow(color: Color("Main"), x: 0.0, y: 4.0, blur:10.0)
     }
 }
