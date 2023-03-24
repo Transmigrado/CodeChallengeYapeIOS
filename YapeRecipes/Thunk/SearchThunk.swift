@@ -16,8 +16,9 @@ func searchListThunk(searchText: String) -> Thunk<AppState>{
        
         let state = getState()
         
+
         let filteredList = state?.recipes.list.filter{
-            $0.name!.localizedCaseInsensitiveContains(searchText)
+            ("\(String(describing: $0.name)) \($0.ingredients.joined(separator: " "))").lowercased().localizedCaseInsensitiveContains(searchText.lowercased())
         }
         
         dispatch(SearchList(list: filteredList ?? []))

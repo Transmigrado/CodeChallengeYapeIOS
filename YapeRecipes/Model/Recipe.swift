@@ -42,6 +42,7 @@ extension Recipe {
         cal = snapshotValue["cal"] as? Int
         userId = snapshotValue["userId"] as? String
         textDescription = snapshotValue["description"] as? String
+        ingredients = (snapshotValue["ingredients"] as? [String])!
         let firGeoPoint = snapshotValue["location"] as! GeoPoint
         location = Location(latitude: firGeoPoint.latitude, longitude: firGeoPoint.longitude)
         
