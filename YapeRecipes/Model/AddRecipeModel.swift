@@ -25,9 +25,18 @@ class AddRecipeModel: ObservableObject {
     }()
     
     
-    lazy var emailValidation: ValidationContainer = {
+    lazy var nameValidation: ValidationContainer = {
         $name.nonEmptyValidator(form: form, errorMessage: "Debes escribir un nombre")
     }()
+    
+    lazy var textDescriptionValidation: ValidationContainer = {
+        $textDescription.nonEmptyValidator(form: form, errorMessage: "Debes escribir una descripción")
+    }()
+    
+    lazy var ingredientsValidation: ValidationContainer = {
+        $ingredients.nonEmptyValidator(form: form, errorMessage: "Debes agregar por lo menos un ingrediente")
+    }()
+    
     
     
     func addIngredient(name: String){

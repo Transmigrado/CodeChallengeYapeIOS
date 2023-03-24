@@ -113,6 +113,7 @@
 		4F8100A629CBB15700BB1383 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8100A529CBB15700BB1383 /* LocationManager.swift */; };
 		4F8100A829CD257800BB1383 /* NewIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8100A729CD257800BB1383 /* NewIngredientView.swift */; };
 		4F8100AA29CD285300BB1383 /* AddRecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8100A929CD285300BB1383 /* AddRecipeModel.swift */; };
+		4F8100AD29CD49D800BB1383 /* CustomValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8100AC29CD49D800BB1383 /* CustomValidator.swift */; };
 		4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFE829C74A7300BB1383 /* UserDetectView.swift */; };
 		4F81FFF629C75C0600BB1383 /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFF529C75C0600BB1383 /* ImageCardView.swift */; };
 		4F81FFF929C75ED900BB1383 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81FFF829C75ED900BB1383 /* GoogleSignIn */; };
@@ -197,6 +198,7 @@
 		4F8100A529CBB15700BB1383 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4F8100A729CD257800BB1383 /* NewIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIngredientView.swift; sourceTree = "<group>"; };
 		4F8100A929CD285300BB1383 /* AddRecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeModel.swift; sourceTree = "<group>"; };
+		4F8100AC29CD49D800BB1383 /* CustomValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomValidator.swift; sourceTree = "<group>"; };
 		4F81FFE829C74A7300BB1383 /* UserDetectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetectView.swift; sourceTree = "<group>"; };
 		4F81FFF529C75C0600BB1383 /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
 		4F81FFFC29C75FF300BB1383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 		4F369FD029C38E7E0050138C /* YapeRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				4F8100AB29CD49CB00BB1383 /* Extensions */,
 				4F8100A429CBB14800BB1383 /* Location */,
 				4F81003A29C8084900BB1383 /* Inject */,
 				4F81FFFF29C76E0B00BB1383 /* Utils */,
@@ -514,6 +517,14 @@
 				4F8100A529CBB15700BB1383 /* LocationManager.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		4F8100AB29CD49CB00BB1383 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F8100AC29CD49D800BB1383 /* CustomValidator.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4F81FFEC29C74DA200BB1383 /* Assets */ = {
@@ -755,6 +766,7 @@
 				4F00790129C6AAB80054046E /* RecipeType.swift in Sources */,
 				4F00790729C7299A0054046E /* UserReducer.swift in Sources */,
 				4F81004629C9148900BB1383 /* SignupView.swift in Sources */,
+				4F8100AD29CD49D800BB1383 /* CustomValidator.swift in Sources */,
 				4F81003C29C808C700BB1383 /* Inject.swift in Sources */,
 				4F81005129C9C9AB00BB1383 /* BackButton.swift in Sources */,
 				4F81000D29C78B8D00BB1383 /* ImagePicker.swift in Sources */,
