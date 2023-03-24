@@ -14,6 +14,7 @@ class SignupModel: ObservableObject {
     @Published var name: String = ""
     @Published var lastName: String = ""
     @Published var email: String = ""
+    @Published var password: String = ""
   
     lazy var form = {
         FormValidation(validationType: .immediate)
@@ -29,5 +30,9 @@ class SignupModel: ObservableObject {
     
     lazy var emailValidation: ValidationContainer = {
         $email.emailValidator(form: form, errorMessage: "Debes escribir un correo válido")
+    }()
+    
+    lazy var passwordValidation: ValidationContainer = {
+        $password.nonEmptyValidator(form: form, errorMessage: "Debes escribir una contraseña valida")
     }()
 }

@@ -38,6 +38,27 @@ func signinThunk(email:String, password: String) -> Thunk<AppState>{
     }
 }
 
+func signupThunk(user: User) -> Thunk<AppState>{
+    return Thunk<AppState> { dispatch, getState in
+
+        Auth.auth().createUser(withEmail: user.email, password: user.password){ result, error in
+            
+            print(error)
+            
+            if(error == nil){
+                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                changeRequest?.displayName = "\(user.name) \(user.lastName)"
+                changeRequest?.commitChanges { changeRequestError in
+                    if(changeRequestError == nil){
+                        dispatch(createThunk())
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
 
 func googleSigninThunk(callback: @escaping () -> ()) -> Thunk<AppState>{
     return Thunk<AppState> { dispatch, getState in

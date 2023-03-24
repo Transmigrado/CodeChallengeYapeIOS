@@ -11,6 +11,7 @@ enum FoodType: String, CaseIterable {
     case dessert = "dessert"
     case mainDish = "main_dish"
     case soup = "soup"
+    case coctel = "coctel"
     
     func icon() -> String {
         switch self {
@@ -20,6 +21,8 @@ enum FoodType: String, CaseIterable {
                 return  "icMainDish"
             case .soup:
                 return  "icSoup"
+            case .coctel:
+                return  "icCoctel"
         }
     }
     
@@ -31,6 +34,8 @@ enum FoodType: String, CaseIterable {
                 return  "Principal"
             case .soup:
                 return  "Sopa"
+            case .coctel:
+                return  "Coctel"
         }
     }
  }

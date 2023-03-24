@@ -47,7 +47,6 @@ struct SigninWithEmailView: View {
                     }
                 }
                 .buttonStyle(Rounded(color: Color("Main")))
-                .disabled(true)
             }
             .padding(10.0)
         }

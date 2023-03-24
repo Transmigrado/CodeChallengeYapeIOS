@@ -26,6 +26,9 @@ struct Recipe: Identifiable, Equatable {
     
     var location: Location?
     
+    
+    var ingredients: [String] = []
+    
   
 }
 

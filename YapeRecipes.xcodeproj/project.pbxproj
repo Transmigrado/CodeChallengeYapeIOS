@@ -64,7 +64,6 @@
 		4F81002429C78FF200BB1383 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81002329C78FF200BB1383 /* FirebaseStorageCombine-Community */; };
 		4F81002629C79B6000BB1383 /* RecipeThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002529C79B6000BB1383 /* RecipeThunk.swift */; };
 		4F81002829C7ADA500BB1383 /* RoundedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002729C7ADA500BB1383 /* RoundedIconButton.swift */; };
-		4F81002A29C7AF3B00BB1383 /* FoodTypeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002929C7AF3B00BB1383 /* FoodTypeSelector.swift */; };
 		4F81002C29C7CE2400BB1383 /* ItemTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81002B29C7CE2400BB1383 /* ItemTab.swift */; };
 		4F81003929C8062800BB1383 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81003829C8062800BB1383 /* Swinject */; };
 		4F81003C29C808C700BB1383 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81003B29C808C700BB1383 /* Inject.swift */; };
@@ -110,6 +109,10 @@
 		4F81009629CA1E1D00BB1383 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81009529CA1E1D00BB1383 /* GoogleSignInSwift */; };
 		4F81009B29CA20F600BB1383 /* RecipesReducerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81009A29CA20F600BB1383 /* RecipesReducerTest.swift */; };
 		4F81009D29CA2B8F00BB1383 /* UserReducerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81009C29CA2B8F00BB1383 /* UserReducerTest.swift */; };
+		4F8100A129CA879900BB1383 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4F8100A029CA879900BB1383 /* Lottie */; };
+		4F8100A629CBB15700BB1383 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8100A529CBB15700BB1383 /* LocationManager.swift */; };
+		4F8100A829CD257800BB1383 /* NewIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8100A729CD257800BB1383 /* NewIngredientView.swift */; };
+		4F8100AA29CD285300BB1383 /* AddRecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8100A929CD285300BB1383 /* AddRecipeModel.swift */; };
 		4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFE829C74A7300BB1383 /* UserDetectView.swift */; };
 		4F81FFF629C75C0600BB1383 /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81FFF529C75C0600BB1383 /* ImageCardView.swift */; };
 		4F81FFF929C75ED900BB1383 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 4F81FFF829C75ED900BB1383 /* GoogleSignIn */; };
@@ -178,7 +181,6 @@
 		4F81000E29C78E7E00BB1383 /* ImageThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageThunk.swift; sourceTree = "<group>"; };
 		4F81002529C79B6000BB1383 /* RecipeThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeThunk.swift; sourceTree = "<group>"; };
 		4F81002729C7ADA500BB1383 /* RoundedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedIconButton.swift; sourceTree = "<group>"; };
-		4F81002929C7AF3B00BB1383 /* FoodTypeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTypeSelector.swift; sourceTree = "<group>"; };
 		4F81002B29C7CE2400BB1383 /* ItemTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTab.swift; sourceTree = "<group>"; };
 		4F81003B29C808C700BB1383 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		4F81003F29C8A3F700BB1383 /* SearchThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchThunk.swift; sourceTree = "<group>"; };
@@ -192,6 +194,9 @@
 		4F81005429C9DD6E00BB1383 /* SimpleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHeaderView.swift; sourceTree = "<group>"; };
 		4F81009A29CA20F600BB1383 /* RecipesReducerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesReducerTest.swift; sourceTree = "<group>"; };
 		4F81009C29CA2B8F00BB1383 /* UserReducerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReducerTest.swift; sourceTree = "<group>"; };
+		4F8100A529CBB15700BB1383 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		4F8100A729CD257800BB1383 /* NewIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIngredientView.swift; sourceTree = "<group>"; };
+		4F8100A929CD285300BB1383 /* AddRecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeModel.swift; sourceTree = "<group>"; };
 		4F81FFE829C74A7300BB1383 /* UserDetectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetectView.swift; sourceTree = "<group>"; };
 		4F81FFF529C75C0600BB1383 /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
 		4F81FFFC29C75FF300BB1383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -210,6 +215,7 @@
 				4F81001C29C78FF200BB1383 /* FirebaseAuthCombine-Community in Frameworks */,
 				4F81FFF929C75ED900BB1383 /* GoogleSignIn in Frameworks */,
 				4F0078DB29C664680054046E /* ReSwift in Frameworks */,
+				4F8100A129CA879900BB1383 /* Lottie in Frameworks */,
 				4F81001E29C78FF200BB1383 /* FirebaseFirestore in Frameworks */,
 				4F81003929C8062800BB1383 /* Swinject in Frameworks */,
 				4F81002029C78FF200BB1383 /* FirebaseFirestoreCombine-Community in Frameworks */,
@@ -372,6 +378,7 @@
 		4F369FD029C38E7E0050138C /* YapeRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				4F8100A429CBB14800BB1383 /* Location */,
 				4F81003A29C8084900BB1383 /* Inject */,
 				4F81FFFF29C76E0B00BB1383 /* Utils */,
 				4F81FFFC29C75FF300BB1383 /* Info.plist */,
@@ -436,6 +443,7 @@
 				4F81000729C782B800BB1383 /* RecipeStep.swift */,
 				4F81004C29C943C800BB1383 /* SignupModel.swift */,
 				4F81005229C9DC8000BB1383 /* SigninModel.swift */,
+				4F8100A929CD285300BB1383 /* AddRecipeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -450,11 +458,11 @@
 				4F81FFF529C75C0600BB1383 /* ImageCardView.swift */,
 				4F81000929C78AAA00BB1383 /* ButtonImagePicker.swift */,
 				4F81002729C7ADA500BB1383 /* RoundedIconButton.swift */,
-				4F81002929C7AF3B00BB1383 /* FoodTypeSelector.swift */,
 				4F81002B29C7CE2400BB1383 /* ItemTab.swift */,
 				4F81004729C93C4000BB1383 /* CustomTextField.swift */,
 				4F81005029C9C9AB00BB1383 /* BackButton.swift */,
 				4F81005429C9DD6E00BB1383 /* SimpleHeaderView.swift */,
+				4F8100A729CD257800BB1383 /* NewIngredientView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -498,6 +506,14 @@
 				4F81009C29CA2B8F00BB1383 /* UserReducerTest.swift */,
 			);
 			path = Reducers;
+			sourceTree = "<group>";
+		};
+		4F8100A429CBB14800BB1383 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				4F8100A529CBB15700BB1383 /* LocationManager.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		4F81FFEC29C74DA200BB1383 /* Assets */ = {
@@ -552,6 +568,7 @@
 				4F81002329C78FF200BB1383 /* FirebaseStorageCombine-Community */,
 				4F81003829C8062800BB1383 /* Swinject */,
 				4F81004A29C940E200BB1383 /* FormValidator */,
+				4F8100A029CA879900BB1383 /* Lottie */,
 			);
 			productName = YapeRecipes;
 			productReference = 4F369FCE29C38E7E0050138C /* YapeRecipes.app */;
@@ -668,6 +685,7 @@
 				4F81001029C78FF200BB1383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				4F81003729C8062800BB1383 /* XCRemoteSwiftPackageReference "Swinject" */,
 				4F81004929C940E200BB1383 /* XCRemoteSwiftPackageReference "SwiftUIFormValidator" */,
+				4F81009F29CA879400BB1383 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 4F369FCF29C38E7E0050138C /* Products */;
 			projectDirPath = "";
@@ -712,13 +730,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8100A829CD257800BB1383 /* NewIngredientView.swift in Sources */,
 				4F0078EC29C670ED0054046E /* RecipesReducer.swift in Sources */,
 				4F00790329C6B3CC0054046E /* RecipeDetailView.swift in Sources */,
+				4F8100A629CBB15700BB1383 /* LocationManager.swift in Sources */,
 				4F0078EE29C671120054046E /* Action.swift in Sources */,
 				4F0078E129C665310054046E /* BindableStore.swift in Sources */,
 				4F81000129C76E1500BB1383 /* FirebAuth.swift in Sources */,
 				4F81005329C9DC8000BB1383 /* SigninModel.swift in Sources */,
 				4F0078CE29C63DF90054046E /* HomeView.swift in Sources */,
+				4F8100AA29CD285300BB1383 /* AddRecipeModel.swift in Sources */,
 				4F0078CC29C63DE80054046E /* ProfileView.swift in Sources */,
 				4F0078DF29C664BA0054046E /* AppState.swift in Sources */,
 				4F0078F629C677EE0054046E /* FetchThunk.swift in Sources */,
@@ -753,7 +774,6 @@
 				4F36A01729C3A2840050138C /* Button+Styles.swift in Sources */,
 				4F81FFE929C74A7300BB1383 /* UserDetectView.swift in Sources */,
 				4F81005529C9DD6E00BB1383 /* SimpleHeaderView.swift in Sources */,
-				4F81002A29C7AF3B00BB1383 /* FoodTypeSelector.swift in Sources */,
 				4F369FD229C38E7E0050138C /* YapeRecipesApp.swift in Sources */,
 				4F0078FA29C6990F0054046E /* RecipeCardView.swift in Sources */,
 				4F36A01929C3BC850050138C /* TextField+Styles.swift in Sources */,
@@ -1163,6 +1183,14 @@
 				minimumVersion = 0.9.0;
 			};
 		};
+		4F81009F29CA879400BB1383 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		4F81FFF729C75ED900BB1383 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
@@ -1413,6 +1441,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F81FFF729C75ED900BB1383 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		4F8100A029CA879900BB1383 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F81009F29CA879400BB1383 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 		4F81FFF829C75ED900BB1383 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -15,5 +15,9 @@
 	</array>
     <key>FirebaseAutomaticScreenReportingEnabled</key>
     <true />
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Queremos saber de donde posteas</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Queremos saber de donde posteas</string>
 </dict>
 </plist>
