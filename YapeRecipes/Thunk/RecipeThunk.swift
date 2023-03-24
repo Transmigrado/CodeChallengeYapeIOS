@@ -17,18 +17,20 @@ func addRecipeThunk(recipe: Recipe) -> Thunk<AppState>{
         
         let db = Firestore.firestore()
         
-        var ref: DocumentReference? = nil
-        ref = db.collection("Recipes").addDocument(data: [
+        db.collection("Recipes").addDocument(data: [
             "name": recipe.name ?? "",
             "description": recipe.textDescription ?? "",
+            "cal": recipe.cal ?? 100,
+            "duration": recipe.duration ?? 8,
+            "type": recipe.type?.rawValue ?? "main_dish",
+            "cover": recipe.cover ?? "",
+            "ingredients": recipe.ingredients,
+            "location": GeoPoint(latitude: recipe.location!.latitude, longitude: recipe.location!.longitude),
             "createdAt": Date(),
             "updatedAt": Date()
         ]) { err in
-            if let err = err {
-                print("Error adding document: \(err)")
-            } else {
-                print("Document added with ID: \(ref!.documentID)")
-            }
+            
+            dispatch(fetchThunk())
         }
         
     }

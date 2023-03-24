@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 import FormValidator
-
+import CoreLocation
 
 class AddRecipeModel: ObservableObject {
 
@@ -38,8 +38,21 @@ class AddRecipeModel: ObservableObject {
     }()
     
     
-    
     func addIngredient(name: String){
         self.ingredients.append(name)
+    }
+    
+    func getRecipe(location: CLLocationCoordinate2D) -> Recipe {
+        let types: [FoodType] = [.mainDish, .soup, .dessert, .coctel]
+        var recipe = Recipe()
+        recipe.name = self.name
+        recipe.textDescription = self.textDescription
+        recipe.cal = self.cal
+        recipe.duration = self.durationAmount
+        recipe.type = types[self.type]
+        recipe.location = Location(latitude: location.latitude, longitude: location.longitude)
+        recipe.ingredients = ingredients
+        
+        return recipe
     }
 }

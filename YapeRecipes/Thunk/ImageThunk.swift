@@ -13,7 +13,7 @@ import Firebase
 import FirebaseStorage
 
 
-func uploadImageThunk(image: UIImage) -> Thunk<AppState>{
+func uploadImageAndPublishRecipeThunk(image: UIImage,  recipe: Recipe) -> Thunk<AppState>{
     return Thunk<AppState> { dispatch, getState in
         
         let storage = Storage.storage()
@@ -30,8 +30,15 @@ func uploadImageThunk(image: UIImage) -> Thunk<AppState>{
                    print("Error while uploading file: ", error)
                }
 
-               if let metadata = metadata {
-                   print("Metadata: ", metadata)
+               if metadata != nil {
+                   storageRef.downloadURL {
+                       if($1 == nil){
+                           var newRecipe = recipe
+                           newRecipe.cover = $0?.absoluteString
+                           dispatch(addRecipeThunk(recipe: newRecipe))
+                       }
+                      
+                   }
                }
            }
        }

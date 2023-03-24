@@ -16,12 +16,11 @@ struct ProfileView: View {
     
     var body: some View {
         VStack{
-            Text("are_you_sure_logout")
             Button("Cerrar sesión") {
                showingAlert = true
                 
            }
-           .alert("are_you_sure_logout", isPresented: $showingAlert) {
+           .alert("¿Estás seguro que quieres cerrar sesión?", isPresented: $showingAlert) {
                Button("Cancel", role: .destructive) { }
                Button("Salir", role: .cancel) {
                    coordinator.trigger(.signin)

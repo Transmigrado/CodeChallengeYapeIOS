@@ -14,6 +14,7 @@ struct AddRecipeView: View {
     
     @StateObject var locationManager = LocationManager()
     @StateObject var model = AddRecipeModel()
+    @State var currentImage = UIImage()
     
     @State private var showNewIngredient = false
     
@@ -24,7 +25,7 @@ struct AddRecipeView: View {
                     
                     ZStack{
                         ButtonImagePicker(action: {image in
-                            self.store.dispatch(uploadImageThunk(image: image))
+                            currentImage = image
                         })
                     }
                     .padding(10.0)
@@ -32,9 +33,19 @@ struct AddRecipeView: View {
                     VStack{
                         TextField("Nombre", text: $model.name)
                             .textFieldStyle(RoundedTextField())
+                            .validation(model.nameValidation) { message in
+                                        Text(message)
+                                                .foregroundColor(Color.red)
+                                                .font(.caption)
+                                        }
                         
                         TextField("Descripción", text: $model.textDescription)
                             .textFieldStyle(RoundedTextField())
+                            .validation(model.nameValidation) { message in
+                                        Text(message)
+                                                .foregroundColor(Color.red)
+                                                .font(.caption)
+                                        }
                         
                         Divider()
                     }
@@ -69,14 +80,14 @@ struct AddRecipeView: View {
                         }
                         .padding(10.0)
                     }
-
-                  
+                    
                     Divider()
+                    
                     VStack(alignment: .leading){
                         Text("Tipo")
                             .bold()
                         Picker(selection: $model.type, label:
-                                        Text("Picker Name")
+                                        Text("Selecciona un tipo")
                                         , content: {
                                             Text("Principal").tag(0)
                                             Text("Sopa").tag(1)
@@ -85,11 +96,10 @@ struct AddRecipeView: View {
                                     })
                     }
                     .padding(10.0)
-                    
-                    
+                   
                     VStack(alignment: .leading){
                         HStack{
-                            Text("Tiempo de preparación")
+                            Text("Ingredientes")
                                 .bold()
                             Spacer()
                             
@@ -110,13 +120,23 @@ struct AddRecipeView: View {
                         }
                     }
                     .padding(.vertical, 5.0)
+                    .validation(model.ingredientsValidation) { message in
+                                Text(message)
+                                        .foregroundColor(Color.red)
+                                        .font(.caption)
+                                }
                     
                     Divider()
                     
-              
-                    
                     Button {
-                       
+                        
+                        _ = self.model.form.triggerValidation()
+                        
+                        if(!self.model.form.isAllValid()){
+                            return
+                        }
+                        self.store.dispatch(uploadImageAndPublishRecipeThunk(image: currentImage, recipe: self.model.getRecipe(location: self.locationManager.location!)))
+                        
                     } label: {
                         HStack{
                             Text("Agregar receta")
