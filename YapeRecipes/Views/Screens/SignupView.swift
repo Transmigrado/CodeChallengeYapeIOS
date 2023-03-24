@@ -69,16 +69,7 @@ struct SignupView: View {
             .padding(10.0)
         }
         .frame(alignment: .top)
-        .overlay {
-            ZStack{
-                Text("Hola Mundo")
-            }
-            .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
-            .background(Color("Overlay"))
-            
-        }
        
-
     }
 }
 
